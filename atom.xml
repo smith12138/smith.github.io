@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-30T14:27:05.523Z</updated>
+  <updated>2020-06-30T14:27:05.522Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Git基础命令</title>
-    <link href="http://yoursite.com/2020/06/30/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2020/06/30/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</id>
-    <published>2020-06-30T08:57:24.000Z</published>
-    <updated>2020-06-30T14:27:05.523Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;一．Git基础&quot;&gt;&lt;a href=&quot;#一．Git基础&quot; class=&quot;headerlink&quot; title=&quot;一．Git基础&quot;&gt;&lt;/a&gt;一．&lt;strong&gt;Git基础&lt;/strong&gt;&lt;/h3&gt;&lt;h4 id=&quot;1．Git介绍&quot;&gt;&lt;a href=&quot;#1．Git介绍&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
-    
-    
-      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
-    
-  </entry>
   
   <entry>
     <title>CrawlSpider源码分析</title>
