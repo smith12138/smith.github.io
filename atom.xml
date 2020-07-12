@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-07T16:09:13.846Z</updated>
+  <updated>2020-07-07T16:09:12.618Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>接口测试基础</title>
+    <link href="http://yoursite.com/2020/07/07/Python/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/07/07/Python/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-07-07T15:52:24.000Z</published>
+    <updated>2020-07-07T16:09:12.618Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;为什么要做接口测试？&quot;&gt;&lt;a href=&quot;#为什么要做接口测试？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="InterFace Test" scheme="http://yoursite.com/tags/InterFace-Test/"/>
+    
+  </entry>
+  
+  <entry>
     <title>接口自动化基础</title>
-    <link href="http://yoursite.com/2020/07/07/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    <id>http://yoursite.com/2020/07/07/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</id>
+    <link href="http://yoursite.com/2020/07/07/Python/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <id>http://yoursite.com/2020/07/07/Python/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/</id>
     <published>2020-07-07T15:52:24.000Z</published>
     <updated>2020-07-07T16:09:13.846Z</updated>
     
@@ -45,36 +72,9 @@
   </entry>
   
   <entry>
-    <title>接口测试基础</title>
-    <link href="http://yoursite.com/2020/07/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2020/07/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
-    <published>2020-07-07T15:52:24.000Z</published>
-    <updated>2020-07-07T16:09:12.618Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;为什么要做接口测试？&quot;&gt;&lt;a href=&quot;#为什么要做接口测试？&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
-    
-    
-      <category term="InterFace Test" scheme="http://yoursite.com/tags/InterFace-Test/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Git基础命令</title>
-    <link href="http://yoursite.com/2020/06/30/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2020/06/30/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</id>
+    <link href="http://yoursite.com/2020/06/30/Git/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2020/06/30/Git/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</id>
     <published>2020-06-30T08:57:24.000Z</published>
     <updated>2020-06-30T14:27:05.523Z</updated>
     
@@ -99,9 +99,9 @@
   </entry>
   
   <entry>
-    <title>Settings 组件分析</title>
-    <link href="http://yoursite.com/2020/06/28/Settings%20%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90/"/>
-    <id>http://yoursite.com/2020/06/28/Settings%20%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90/</id>
+    <title>MySQL基础语法</title>
+    <link href="http://yoursite.com/2020/06/28/MySQL/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2020/06/28/MySQL/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
     <published>2020-06-28T07:57:24.000Z</published>
     <updated>2020-06-30T14:27:05.523Z</updated>
     
@@ -111,25 +111,26 @@
       
         
         
-          &lt;ul&gt;
-&lt;li&gt;&lt;h4 id=&quot;COOKIES-ENABLED&quot;&gt;&lt;a href=&quot;#COOKIES-ENABLED&quot; class=&quot;headerlink&quot; title=&quot;COOKIES_ENABLED&quot;&gt;&lt;/a&gt;COOKIES_ENABLED&lt;/h4&gt;&lt;p&gt; 进入
+          &lt;h4 id=&quot;查看库，表，内容&quot;&gt;&lt;a href=&quot;#查看库，表，内容&quot; class=&quot;headerlink&quot; title=&quot;查看库，表，内容&quot;&gt;&lt;/a&gt;查看库，表，内容&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查看MySQL版本号 &lt;/p&gt;
+&lt;pre class=&quot;
         
       
     
     </summary>
     
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
     
     
-      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
+      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
     
   </entry>
   
   <entry>
     <title>设计Lagou表结构</title>
-    <link href="http://yoursite.com/2020/06/28/%E8%AE%BE%E8%AE%A1%E8%A1%A8%E7%BB%93%E6%9E%84/"/>
-    <id>http://yoursite.com/2020/06/28/%E8%AE%BE%E8%AE%A1%E8%A1%A8%E7%BB%93%E6%9E%84/</id>
+    <link href="http://yoursite.com/2020/06/28/Python/Python%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB/%E6%8B%89%E5%8B%BE%E7%BD%91%E5%85%A8%E7%AB%99%E7%88%AC%E5%8F%96/%E8%AE%BE%E8%AE%A1%E8%A1%A8%E7%BB%93%E6%9E%84/"/>
+    <id>http://yoursite.com/2020/06/28/Python/Python%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB/%E6%8B%89%E5%8B%BE%E7%BD%91%E5%85%A8%E7%AB%99%E7%88%AC%E5%8F%96/%E8%AE%BE%E8%AE%A1%E8%A1%A8%E7%BB%93%E6%9E%84/</id>
     <published>2020-06-28T07:57:24.000Z</published>
     <updated>2020-06-30T14:27:05.523Z</updated>
     
@@ -155,8 +156,8 @@
   
   <entry>
     <title>CrawlSpider源码分析</title>
-    <link href="http://yoursite.com/2020/06/28/CrawlSpider%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/"/>
-    <id>http://yoursite.com/2020/06/28/CrawlSpider%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/</id>
+    <link href="http://yoursite.com/2020/06/28/Python/Python%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB/%E6%8B%89%E5%8B%BE%E7%BD%91%E5%85%A8%E7%AB%99%E7%88%AC%E5%8F%96/CrawlSpider%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/"/>
+    <id>http://yoursite.com/2020/06/28/Python/Python%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB/%E6%8B%89%E5%8B%BE%E7%BD%91%E5%85%A8%E7%AB%99%E7%88%AC%E5%8F%96/CrawlSpider%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/</id>
     <published>2020-06-28T07:57:24.000Z</published>
     <updated>2020-06-30T14:27:05.522Z</updated>
     
@@ -182,9 +183,9 @@
   </entry>
   
   <entry>
-    <title>MySQL基础语法</title>
-    <link href="http://yoursite.com/2020/06/28/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/2020/06/28/MySQL%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</id>
+    <title>Settings 组件分析</title>
+    <link href="http://yoursite.com/2020/06/28/Python/Python%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB/%E6%8B%89%E5%8B%BE%E7%BD%91%E5%85%A8%E7%AB%99%E7%88%AC%E5%8F%96/Settings%20%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90/"/>
+    <id>http://yoursite.com/2020/06/28/Python/Python%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB/%E6%8B%89%E5%8B%BE%E7%BD%91%E5%85%A8%E7%AB%99%E7%88%AC%E5%8F%96/Settings%20%E7%BB%84%E4%BB%B6%E5%88%86%E6%9E%90/</id>
     <published>2020-06-28T07:57:24.000Z</published>
     <updated>2020-06-30T14:27:05.523Z</updated>
     
@@ -194,19 +195,18 @@
       
         
         
-          &lt;h4 id=&quot;查看库，表，内容&quot;&gt;&lt;a href=&quot;#查看库，表，内容&quot; class=&quot;headerlink&quot; title=&quot;查看库，表，内容&quot;&gt;&lt;/a&gt;查看库，表，内容&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;查看MySQL版本号 &lt;/p&gt;
-&lt;pre class=&quot;
+          &lt;ul&gt;
+&lt;li&gt;&lt;h4 id=&quot;COOKIES-ENABLED&quot;&gt;&lt;a href=&quot;#COOKIES-ENABLED&quot; class=&quot;headerlink&quot; title=&quot;COOKIES_ENABLED&quot;&gt;&lt;/a&gt;COOKIES_ENABLED&lt;/h4&gt;&lt;p&gt; 进入
         
       
     
     </summary>
     
     
-      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
     
     
-      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
+      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
     
   </entry>
   
