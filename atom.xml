@@ -104,7 +104,7 @@
     <link href="http://yoursite.com/2020/07/12/Python/network/UDP/socket/"/>
     <id>http://yoursite.com/2020/07/12/Python/network/UDP/socket/</id>
     <published>2020-07-12T07:07:22.000Z</published>
-    <updated>2020-07-12T08:32:26.733Z</updated>
+    <updated>2020-07-12T10:32:18.773Z</updated>
     
     <summary type="html">
     
@@ -119,8 +119,10 @@
     </summary>
     
     
-      <category term="UDP" scheme="http://yoursite.com/categories/UDP/"/>
+      <category term="Network" scheme="http://yoursite.com/categories/Network/"/>
     
+    
+      <category term="UDP" scheme="http://yoursite.com/tags/UDP/"/>
     
       <category term="Socket" scheme="http://yoursite.com/tags/Socket/"/>
     
@@ -131,7 +133,7 @@
     <link href="http://yoursite.com/2020/07/12/Python/network/UDP/port/"/>
     <id>http://yoursite.com/2020/07/12/Python/network/UDP/port/</id>
     <published>2020-07-12T07:04:13.000Z</published>
-    <updated>2020-07-12T08:32:20.862Z</updated>
+    <updated>2020-07-12T10:32:03.146Z</updated>
     
     <summary type="html">
     
@@ -146,7 +148,7 @@
     </summary>
     
     
-      <category term="UDP" scheme="http://yoursite.com/categories/UDP/"/>
+      <category term="Network" scheme="http://yoursite.com/categories/Network/"/>
     
     
       <category term="Port" scheme="http://yoursite.com/tags/Port/"/>
@@ -158,7 +160,7 @@
     <link href="http://yoursite.com/2020/07/12/Python/network/UDP/network-basic/"/>
     <id>http://yoursite.com/2020/07/12/Python/network/UDP/network-basic/</id>
     <published>2020-07-12T07:02:43.000Z</published>
-    <updated>2020-07-12T08:32:16.972Z</updated>
+    <updated>2020-07-12T10:31:48.934Z</updated>
     
     <summary type="html">
     
@@ -176,7 +178,7 @@
       <category term="Network" scheme="http://yoursite.com/categories/Network/"/>
     
     
-      <category term="UDP" scheme="http://yoursite.com/tags/UDP/"/>
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
     
   </entry>
   
@@ -319,41 +321,11 @@
   </entry>
   
   <entry>
-    <title>CrawlSpider code</title>
-    <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/CrawlSpider%20code/"/>
-    <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/CrawlSpider%20code/</id>
-    <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T07:26:18.729Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;查看可用-scrapy-模板&quot;&gt;&lt;a href=&quot;#查看可用-scrapy-模板&quot; class=&quot;headerlink&quot; title=&quot;查看可用 scrapy 模板&quot;&gt;&lt;/a&gt;查看可用 scrapy 模板&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;h4
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
-    
-    
-      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
-    
-      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Settings</title>
+    <title>settings组件分析</title>
     <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/Settings/"/>
     <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/Settings/</id>
     <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T07:26:26.998Z</updated>
+    <updated>2020-07-12T10:30:03.322Z</updated>
     
     <summary type="html">
     
@@ -375,35 +347,6 @@
       <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
     
       <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>devise mysql table</title>
-    <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/devise%20mysql%20table/"/>
-    <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/devise%20mysql%20table/</id>
-    <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T07:26:22.485Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;MySQL-表结构设计&quot;&gt;&lt;a href=&quot;#MySQL-表结构设计&quot; class=&quot;headerlink&quot; title=&quot;MySQL 表结构设计&quot;&gt;&lt;/a&gt;MySQL
-        
-      
-    
-    </summary>
-    
-    
-      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
-    
-    
-      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
-    
-      <category term="Practice" scheme="http://yoursite.com/tags/Practice/"/>
     
   </entry>
   
@@ -433,6 +376,65 @@
     
     
       <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>crawlspider源码分析</title>
+    <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/CrawlSpider-code/"/>
+    <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/CrawlSpider-code/</id>
+    <published>2020-06-28T07:57:24.000Z</published>
+    <updated>2020-07-12T10:30:41.094Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;查看可用-scrapy-模板&quot;&gt;&lt;a href=&quot;#查看可用-scrapy-模板&quot; class=&quot;headerlink&quot; title=&quot;查看可用 scrapy 模板&quot;&gt;&lt;/a&gt;查看可用 scrapy 模板&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
+    
+      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>拉钩网MySQL表结构设计</title>
+    <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/devise-mysql-table/"/>
+    <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/devise-mysql-table/</id>
+    <published>2020-06-28T07:57:24.000Z</published>
+    <updated>2020-07-12T10:29:33.787Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;MySQL-表结构设计&quot;&gt;&lt;a href=&quot;#MySQL-表结构设计&quot; class=&quot;headerlink&quot; title=&quot;MySQL 表结构设计&quot;&gt;&lt;/a&gt;MySQL
+        
+      
+    
+    </summary>
+    
+    
+      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
+    
+    
+      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
+    
+      <category term="Practice" scheme="http://yoursite.com/tags/Practice/"/>
     
   </entry>
   

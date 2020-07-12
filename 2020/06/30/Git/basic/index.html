@@ -986,23 +986,21 @@ Config --global user.email “xxx”  配置邮箱</code></pre><blockquote>
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/28/Python/crawler/lagou/CrawlSpider%20code/">
+                <a href="/2020/06/28/Python/crawler/lagou/Settings/">
                     <div class="card-image">
                         
-                        <img src="/medias/1.jpg" class="responsive-img" alt="CrawlSpider code">
+                        <img src="/medias/2.jpg" class="responsive-img" alt="settings组件分析">
                         
-                        <span class="card-title">CrawlSpider code</span>
+                        <span class="card-title">settings组件分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            查看可用 scrapy 模板
-进入项目目录，输入以下命令scrapy genspider --list
-
-可用模板列表Available templates:
-  basic          # 默认模板
-  crawl         
+                            
+COOKIES_ENABLED 进入 scrapy 包 -&gt; downloadermiddlewares 子包 -&gt; cookies模块中
+class CookiesMiddleware:
+    """This middle
                         
                     </div>
                     <div class="publish-info">

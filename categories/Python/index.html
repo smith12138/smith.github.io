@@ -397,11 +397,11 @@
                 </a>
                 
                 
-                <a href="/categories/Network/" title="Network: 2">
+                <a href="/categories/Network/" title="Network: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #FEF9E7;">Network
-                        <span class="tag-length">2</span>
+                        <span class="tag-length">4</span>
                     </span>
                 </a>
                 
@@ -411,15 +411,6 @@
                              chip-default "
                             style="background-color: #F8F9F9;">Linux
                         <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/UDP/" title="UDP: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #82E0AA;">UDP
-                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -647,21 +638,23 @@ HTTP接
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/06/28/Python/crawler/lagou/Settings/">
+                    <a href="/2020/06/28/Python/crawler/lagou/CrawlSpider-code/">
                         <div class="card-image tag-image">
                             
-                            <img src="/medias/2.jpg" class="responsive-img" alt="Settings">
+                            <img src="/medias/1.jpg" class="responsive-img" alt="crawlspider源码分析">
                             
-                            <span class="card-title">Settings</span>
+                            <span class="card-title">crawlspider源码分析</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                
-COOKIES_ENABLED 进入 scrapy 包 -&gt; downloadermiddlewares 子包 -&gt; cookies模块中
-class CookiesMiddleware:
-    """This middle
+                                查看可用 scrapy 模板
+进入项目目录，输入以下命令scrapy genspider --list
+
+可用模板列表Available templates:
+  basic          # 默认模板
+  crawl         
                             
                         </div>
                         <div class="publish-info">
@@ -699,23 +692,21 @@ class CookiesMiddleware:
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/06/28/Python/crawler/lagou/CrawlSpider%20code/">
+                    <a href="/2020/06/28/Python/crawler/lagou/Settings/">
                         <div class="card-image tag-image">
                             
-                            <img src="/medias/1.jpg" class="responsive-img" alt="CrawlSpider code">
+                            <img src="/medias/2.jpg" class="responsive-img" alt="settings组件分析">
                             
-                            <span class="card-title">CrawlSpider code</span>
+                            <span class="card-title">settings组件分析</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                查看可用 scrapy 模板
-进入项目目录，输入以下命令scrapy genspider --list
-
-可用模板列表Available templates:
-  basic          # 默认模板
-  crawl         
+                                
+COOKIES_ENABLED 进入 scrapy 包 -&gt; downloadermiddlewares 子包 -&gt; cookies模块中
+class CookiesMiddleware:
+    """This middle
                             
                         </div>
                         <div class="publish-info">
