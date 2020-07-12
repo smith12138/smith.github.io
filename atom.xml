@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-12T06:41:05.723Z</updated>
+  <updated>2020-07-12T07:20:47.436Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,224 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>re</title>
+    <link href="http://yoursite.com/2020/07/12/Python/basic/re/"/>
+    <id>http://yoursite.com/2020/07/12/Python/basic/re/</id>
+    <published>2020-07-12T07:19:14.000Z</published>
+    <updated>2020-07-12T07:20:47.436Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;正则表达式&quot;&gt;&lt;a href=&quot;#正则表达式&quot; class=&quot;headerlink&quot; title=&quot;正则表达式&quot;&gt;&lt;/a&gt;正则表达式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h4 id=&quot;爬虫的基础掌握&quot;&gt;&lt;a href=&quot;#爬虫的基础掌握&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>json xml</title>
+    <link href="http://yoursite.com/2020/07/12/Python/basic/json%20xml/"/>
+    <id>http://yoursite.com/2020/07/12/Python/basic/json%20xml/</id>
+    <published>2020-07-12T07:17:23.000Z</published>
+    <updated>2020-07-12T07:18:59.012Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;JSON&quot;&gt;&lt;a href=&quot;#JSON&quot; class=&quot;headerlink&quot; title=&quot;JSON&quot;&gt;&lt;/a&gt;JSON&lt;/h2&gt;&lt;h3 id=&quot;简述：&quot;&gt;&lt;a href=&quot;#简述：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Data" scheme="http://yoursite.com/categories/Data/"/>
+    
+    
+      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>extend</title>
+    <link href="http://yoursite.com/2020/07/12/Python/basic/extend/"/>
+    <id>http://yoursite.com/2020/07/12/Python/basic/extend/</id>
+    <published>2020-07-12T07:14:34.000Z</published>
+    <updated>2020-07-12T07:16:14.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;导语&quot;&gt;&lt;a href=&quot;#导语&quot; class=&quot;headerlink&quot; title=&quot;导语&quot;&gt;&lt;/a&gt;导语&lt;/h3&gt;&lt;p&gt;&lt;code&gt;产品是需要打磨出来的，重点在于打磨二字，没有什么产品可以一就而成&lt;/code&gt;&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>socket basic</title>
+    <link href="http://yoursite.com/2020/07/12/Python/network/UDP/socket%20basic/"/>
+    <id>http://yoursite.com/2020/07/12/Python/network/UDP/socket%20basic/</id>
+    <published>2020-07-12T07:07:22.000Z</published>
+    <updated>2020-07-12T07:10:05.936Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Socket简介&quot;&gt;&lt;a href=&quot;#Socket简介&quot; class=&quot;headerlink&quot; title=&quot;Socket简介&quot;&gt;&lt;/a&gt;&lt;strong&gt;Socket简介&lt;/strong&gt;&lt;/h3&gt;&lt;h3 id=&quot;不同电脑上的进程之间如何通信&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="UDP" scheme="http://yoursite.com/categories/UDP/"/>
+    
+    
+      <category term="Socket" scheme="http://yoursite.com/tags/Socket/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>port</title>
+    <link href="http://yoursite.com/2020/07/12/Python/network/UDP/port/"/>
+    <id>http://yoursite.com/2020/07/12/Python/network/UDP/port/</id>
+    <published>2020-07-12T07:04:13.000Z</published>
+    <updated>2020-07-12T07:10:19.654Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h5 id=&quot;什么是端口&quot;&gt;&lt;a href=&quot;#什么是端口&quot; class=&quot;headerlink&quot; title=&quot;什么是端口&quot;&gt;&lt;/a&gt;&lt;strong&gt;什么是端口&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="UDP" scheme="http://yoursite.com/categories/UDP/"/>
+    
+    
+      <category term="Port" scheme="http://yoursite.com/tags/Port/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>network basic</title>
+    <link href="http://yoursite.com/2020/07/12/Python/network/UDP/network%20basic/"/>
+    <id>http://yoursite.com/2020/07/12/Python/network/UDP/network%20basic/</id>
+    <published>2020-07-12T07:02:43.000Z</published>
+    <updated>2020-07-12T07:10:28.127Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;什么是网络&quot;&gt;&lt;a href=&quot;#什么是网络&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Network" scheme="http://yoursite.com/categories/Network/"/>
+    
+    
+      <category term="UDP" scheme="http://yoursite.com/tags/UDP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux cmd</title>
+    <link href="http://yoursite.com/2020/07/12/Python/network/UDP/linux%20cmd/"/>
+    <id>http://yoursite.com/2020/07/12/Python/network/UDP/linux%20cmd/</id>
+    <published>2020-07-12T06:59:55.000Z</published>
+    <updated>2020-07-12T07:10:34.694Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;查看操作系统的网卡信息&quot;&gt;&lt;a href=&quot;#查看操作系统的网卡信息&quot; class=&quot;headerlink&quot; title=&quot;查看操作系统的网卡信息&quot;&gt;&lt;/a&gt;&lt;strong&gt;查看操作系统的网卡信息&lt;/strong&gt;&lt;/h4&gt;&lt;h5
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ip addr</title>
+    <link href="http://yoursite.com/2020/07/12/Python/network/UDP/ip%20addr/"/>
+    <id>http://yoursite.com/2020/07/12/Python/network/UDP/ip%20addr/</id>
+    <published>2020-07-12T06:55:50.000Z</published>
+    <updated>2020-07-12T07:10:47.171Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;IP地址&quot;&gt;&lt;a href=&quot;#IP地址&quot; class=&quot;headerlink&quot; title=&quot;IP地址&quot;&gt;&lt;/a&gt;&lt;strong&gt;IP地址&lt;/strong&gt;&lt;/h3&gt;&lt;h5 id=&quot;什么是IP地址&quot;&gt;&lt;a href=&quot;#什么是IP地址&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Network" scheme="http://yoursite.com/categories/Network/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
   
   <entry>
     <title>interface_test_basic</title>
@@ -76,7 +294,7 @@
     <link href="http://yoursite.com/2020/06/30/Git/basic/"/>
     <id>http://yoursite.com/2020/06/30/Git/basic/</id>
     <published>2020-06-30T08:57:24.000Z</published>
-    <updated>2020-07-12T06:47:23.287Z</updated>
+    <updated>2020-07-12T07:01:22.578Z</updated>
     
     <summary type="html">
     
@@ -95,6 +313,8 @@
     
     
       <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
     
   </entry>
   
@@ -132,7 +352,7 @@
     <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/Settings/"/>
     <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/Settings/</id>
     <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T06:44:50.177Z</updated>
+    <updated>2020-07-12T06:50:21.540Z</updated>
     
     <summary type="html">
     
@@ -153,6 +373,8 @@
     
       <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
     
+      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
+    
   </entry>
   
   <entry>
@@ -160,7 +382,7 @@
     <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/CrawlSpider%20code/"/>
     <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/CrawlSpider%20code/</id>
     <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T06:44:17.377Z</updated>
+    <updated>2020-07-12T06:50:06.812Z</updated>
     
     <summary type="html">
     
@@ -181,6 +403,8 @@
     
       <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
     
+      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
+    
   </entry>
   
   <entry>
@@ -188,7 +412,7 @@
     <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/devise%20mysql%20table/"/>
     <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/devise%20mysql%20table/</id>
     <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T06:45:52.524Z</updated>
+    <updated>2020-07-12T06:50:13.179Z</updated>
     
     <summary type="html">
     
@@ -207,6 +431,8 @@
     
     
       <category term="Practice" scheme="http://yoursite.com/tags/Practice/"/>
+    
+      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
     
   </entry>
   
