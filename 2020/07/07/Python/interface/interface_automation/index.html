@@ -460,158 +460,336 @@
 <p>怎么简单怎么做（主要是效率）</p>
 </blockquote>
 <hr>
-<h4 id="模拟请求"><a href="#模拟请求" class="headerlink" title="模拟请求"></a>模拟请求</h4><p>(1) 为什么模拟请求</p>
-<p>① 解耦很重要</p>
-<p>② 并行开发很重要（效率第一）</p>
-<p>③ 使用Fiddler模拟请求</p>
-<p>1) 进入Composer工具栏，传入对应headers，body</p>
-<p>④ 使用fiddler模拟响应</p>
-<p>1) 进入AutoResponder工具栏，传入对应url，以及对应的response数据</p>
-<p>\6. 搭建Django框架-测试环境—工程项目</p>
-<p>(1) 开发web端是比较实用的</p>
-<p>(2) 安装Django框架</p>
-<p>① 在线安装：pip install Django  ==指定版本</p>
-<p>② 离线安装：python setup.py install</p>
-<p>1) 官网下载所需版本</p>
-<p>2) 解压，然后在cmd中，进入存放目录，输入命令</p>
-<p>(3) 在终端输入命令：django-admin startproject HelloWorld（项目名可修改）</p>
-<p><img src="https://i.loli.net/2020/05/14/Za794SwAxVEYXbf.jpg" alt="wps18.jpg"> </p>
-<p>① 外部HelloWorld/根目录是您的项目的容器。它的名字对Django无关紧要。您可以将其重命名为您喜欢的任何名称。</p>
-<p>② manage.py：一个命令行实用程序，可让您以各种方式与该Django项目进行交互。您可以manage.py在<a href="https://docs.djangoproject.com/en/3.0/ref/django-admin/" target="_blank" rel="noopener">django-admin和manage.py中</a>阅读有关的所有详细信息 。</p>
-<p>③ 内部HelloWorld/目录是项目的实际Python包。它的名称是Python包名称，您需要使用它来导入其中的任何内容（例如HelloWorld.urls）。</p>
-<p>④ HelloWorld/<strong>init</strong>.py：一个空文件，告诉Python该目录应视为Python软件包。如果您是Python初学者，请在Python官方文档中阅读<a href="#tut-packages">有关包的更多信息</a>。</p>
-<p>⑤ HelloWorld/settings.py：此Django项目的设置/配置。 <a href="https://docs.djangoproject.com/en/3.0/topics/settings/" target="_blank" rel="noopener">Django设置</a>将告诉您所有设置的工作方式。</p>
-<p>⑥ HelloWorld/urls.py：此Django项目的URL声明；Django支持的网站的“目录”。您可以在<a href="https://docs.djangoproject.com/en/3.0/topics/http/urls/" target="_blank" rel="noopener">URL调度</a>程序中阅读有关URL的更多信息。</p>
-<p>⑦ HelloWorld/asgi.py：与ASGI兼容的Web服务器为您的项目提供服务的入口点。有关更多详细信息，请参见<a href="https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/" target="_blank" rel="noopener">如何使用ASGI</a>进行<a href="https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/" target="_blank" rel="noopener">部署</a>。</p>
-<p>⑧ HelloWorld/wsgi.py：与WSGI兼容的Web服务器为您的项目提供服务的入口点。有关更多详细信息，请参见<a href="https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/" target="_blank" rel="noopener">如何使用WSGI</a>进行<a href="https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/" target="_blank" rel="noopener">部署</a></p>
-<p>(4) 运行django</p>
-<p>① 在根目录下，在终端中运行：python manage.py runserver 127.0.0.1:8000</p>
-<p>② 在browser中，输入127.0.0.1:8000</p>
-<p>\7. 创建工程应用app</p>
-<p>(1) 创建新的app，使用系统模块manage</p>
-<p>① 回到根目录，进入终端：python manage.py startapp name</p>
-<p>(2) 原理</p>
-<p>① 需要知道地址怎么到server的，访问urls.py中的方法，执行urlpatterns中的方法</p>
-<p>② 创建的app中的views.py模块中，定义方法</p>
-<p><img src="https://i.loli.net/2020/05/14/a1u3CwOQHek2FWR.jpg" alt="wps19.jpg"> </p>
-<p>③ 在urls.py模块中，引入login方法，urlpatterns变量中，调用login方法</p>
-<p><img src="https://i.loli.net/2020/05/14/MQjWEqdRBs8uaeP.jpg" alt="wps20.jpg"> </p>
-<p>\1. 用户在敲下你的网址并回车，生成请求</p>
-<p>\2. 请求传递到urls.py；Django去urlpatterns中匹配链接（Django会在匹配到的第一个就停下来）</p>
-<p>\3. 一旦匹配成功，Django便会给出相应的view页面（该页面可以为一个Python的函数，或者基于view（Django内置的）的类），也就是用户看到的页面</p>
-<p>\4. 若匹配失败，则出现错误的页面</p>
-<p>\5. 一个工程项目，有很多个APP，每个APP都是工程组成的一部分</p>
-<p>\8. 开发接口</p>
-<p>(1) 框架</p>
-<p>① 都是基于代码</p>
-<p>② 框架就是把所有的代码进行整合，写的简洁一些，逻辑是没有改变的</p>
-<p>③ 无非是多个中间服务商，Apache，Nginx之类的</p>
-<p>④ 只需要知道url跳转到哪儿，在哪儿解析，Response什么信息</p>
-<p>⑤ 真正的API在views模块里面</p>
-<p>⑥ 注意事项：</p>
-<p>1) 代理端口需区分，否则会冲突 </p>
-<p>2) HTML中form表单，与from区分</p>
-<p>3) HTML中路径需以/斜杠结尾</p>
-<p>\9. Unittest</p>
-<p>(1) 创建一个类的时候，继承Unittest框架中TestCase类</p>
-<p>(2) 内置方法</p>
-<p>① setUp：每次方法之前执行</p>
-<p>② tearDown：每次方法之后执行</p>
-<p>③ sefUpClass：类执行前执行</p>
-<p>④ tearDownClass：类执行后执行</p>
-<p>⑤ Test_XX：单词在前的case方法，缺少test则不会运行</p>
-<p>(3) 断言–assert</p>
-<p>① assertEqual：x == y ？None : z</p>
-<p>② assertNotEqual：x != y ？None : z</p>
-<p>③ assertTrue：type(x) == True ? None : z</p>
-<p>(4) 全局变量</p>
-<p>① 相比类变量更加快捷</p>
-<p>② 命名方式：Globals()[‘变量名’] 解决依赖</p>
-<p>(5) 跳过case执行：</p>
-<p>① 使用语法糖：@ unittest.skip(‘case’)</p>
-<p>(6) 创建容器</p>
-<p>① 创建语法：Suite = unittest.TestSuite()</p>
-<p>② 添加case：Suite.addTest(类名(casename))</p>
-<p>③ 可添加多个case</p>
-<p>④ 执行容器：unittest.TextTestRunner().run(容器名)</p>
-<p>(7) 结合HTMLTestRunner，生成TestReport</p>
-<p>① Google-&gt;Python3 HTMLTestRunner，最好是GitHub上面的</p>
-<p>② 创建HTMLTestRunner.py，移至Python-&gt;lib目录</p>
-<p>③ 在case文件中，引入HTMLTestRunner模块</p>
-<p>(8) Unittest之面试</p>
-<p>① 如何使用Python开发测试框架</p>
-<p>1) 语言：Python</p>
-<p>2) 接口：使用requests第三方库</p>
-<p>3) 管理case：unittest框架-断言-skipcase-suite容器-依赖关系</p>
-<p>4) 报告：HTMLTestRunner</p>
-<p>5) 数据管理：Excel，MySql</p>
-<p>6) Case执行：持续集成或批处理文件</p>
-<p>(9) 建议</p>
-<p>① Unittest中，case是按照ascll码比较，进行升序执行</p>
-<p>② 尽量减少依赖执行</p>
-<p>③ GET请求URL与Data分离传参，无响应</p>
-<p>④ Globals()[‘变量’]  = data 下个case调用会报错 </p>
-<p>\10. Mock服务</p>
-<p>(1) 以代码来实现自动响应请求的功能，模拟返回数据</p>
-<p>(2) 引入mock</p>
-<p>① Import unittest.mock</p>
-<p>(3) 使用方法</p>
-<p>① mock_name = mock.Mock(return_value=模拟数据)</p>
-<p>② 请求方法 =  mock_name(改变返回模拟数据)</p>
-<p>③ 示例：</p>
-<p>​      mock_data = mock.Mock(return_value=response_data)</p>
-<p>​    method = mock_data</p>
-<p>​    res = method(request_data, url, method)</p>
-<p>(4) 重构封装mock</p>
-<p>① 示例：</p>
-<p># 封装mock-method</p>
-<p>from unittest import mock</p>
-<p>def mock_test(mock_method, url, method, request_data=None, response_data=None):</p>
-<p>  if response_data == None:</p>
-<p>​    res = mock_method(url, method, response_data)</p>
-<p>​    return res</p>
-<p>  else:</p>
-<p>​    mock_data = mock.Mock(return_value=response_data)</p>
-<p>​    mock_method = mock_data</p>
-<p>​    res = mock_method(request_data, url, method)</p>
-<p>​    return res</p>
-<p>\11. 设计接口自动化测试框架</p>
-<p>(1) Case过多，避免繁琐操作</p>
-<p>(2) 不排除某些需求，设定特殊的值，而手动添加</p>
-<p>(3) 编写接口测试用例</p>
-<p>① <img src="https://i.loli.net/2020/05/14/4GwtTXS5FRcCquj.jpg" alt="wps21.jpg"></p>
-<p>(4) 需要考虑的点</p>
-<p>① 接口地址</p>
-<p>② 请求数据</p>
-<p>③ 接口类型</p>
-<p>④ 预期结果</p>
-<p>⑤ Header - cookie</p>
-<p>⑥ 数据依赖–接口自动化的难点</p>
-<p>(5) 操作Excel</p>
-<p>① 定义一个类</p>
-<p>② <img src="https://i.loli.net/2020/05/14/O7Kc5nXN3WATsZR.jpg" alt="wps22.jpg"></p>
-<p>③ 重构封装excel函数</p>
-<p>1) 封装request_data, header</p>
-<p>2) 封装调用类</p>
-<p>④ 封装request类</p>
-<p>⑤ 对response_data，进行格式化</p>
-<p>1) Json.dumps(response, ensure_ascii=False, intent=2, sort_keys=True)</p>
-<p>2) 使用ensure_ascii的注意事项：</p>
-<p>a. json_dumps(dict)时，如果dict包含有汉字，一定加上ensure_ascii=False。否则按参数默认值True，意思是保证dumps之后的结果里所有的字符都能够被ascii表示，汉字在ascii的字符集里面，因此经过dumps以后的str里，汉字会变成对应的unicode。</p>
-<p>\12. 写入excel测试结果</p>
-<p>(1) 判断接口返回状态</p>
-<p>① 接口是否通畅</p>
-<p>1) 调用status_code方法</p>
-<p>\13. 引入jsonpath_rw 第三方库</p>
-<p>(1) 从第三方库中引入jsonpath，parse 方法</p>
-<p>① B = {‘foo’: [{‘baz’: ‘news’}, {‘baz’: ‘music’}]}</p>
-<p>(2) 赋予规则</p>
-<p>① A = parse(‘foo[*].data’)</p>
-<p>(3) 解析数据</p>
-<p>① C = A.find(b)</p>
-<p>(4) 使用列表推导式，获取数据</p>
-<p>① Data = [match.value for match in C][0] index get content</p>
-<p>\14. </p>
+<h4 id="模拟请求"><a href="#模拟请求" class="headerlink" title="模拟请求"></a>模拟请求</h4><ul>
+<li><h6 id="为什么模拟请求"><a href="#为什么模拟请求" class="headerlink" title="为什么模拟请求"></a>为什么模拟请求</h6></li>
+</ul>
+<blockquote>
+<p>解耦很重要</p>
+<p>并行开发很重要（效率第一）</p>
+<p>使用Fiddler模拟请求</p>
+<p>步骤：进入Composer工具栏，传入对应headers，body</p>
+</blockquote>
+<ul>
+<li><h6 id="使用fiddler模拟响应"><a href="#使用fiddler模拟响应" class="headerlink" title="使用fiddler模拟响应"></a>使用fiddler模拟响应</h6></li>
+</ul>
+<blockquote>
+<p>进入AutoResponder工具栏，传入对应url，以及对应的response数据</p>
+</blockquote>
+<h4 id="搭建Django框架-测试环境"><a href="#搭建Django框架-测试环境" class="headerlink" title="搭建Django框架-测试环境"></a>搭建Django框架-测试环境</h4><p><code>开发web端是比较实用的</code></p>
+<ul>
+<li><h6 id="安装Django框架"><a href="#安装Django框架" class="headerlink" title="安装Django框架"></a>安装Django框架</h6></li>
+</ul>
+<blockquote>
+<p>在线安装：pip install Django  ==指定版本</p>
+<p>离线安装：python setup.py install</p>
+<ol>
+<li>官网下载所需版本</li>
+<li>解压，然后在cmd中，进入存放目录，输入命令</li>
+<li>在终端输入命令：django-admin startproject HelloWorld（项目名可修改）</li>
+</ol>
+</blockquote>
+<p>​    <img src="https://i.loli.net/2020/05/14/Za794SwAxVEYXbf.jpg" alt="项目结构"> </p>
+<ul>
+<li><h6 id="HelloWorld-根目录"><a href="#HelloWorld-根目录" class="headerlink" title="HelloWorld/根目录"></a>HelloWorld/根目录</h6></li>
+</ul>
+<blockquote>
+<p>项目的容器。它的名字对Django无关紧要。您可以将其重命名为您喜欢的任何名称。</p>
+</blockquote>
+<ul>
+<li><h6 id="manage-py"><a href="#manage-py" class="headerlink" title="manage.py"></a>manage.py</h6></li>
+</ul>
+<blockquote>
+<p>一个命令行实用程序，可让您以各种方式与该Django项目进行交互。您可以manage.py在 <a href="https://docs.djangoproject.com/en/3.0/ref/django-admin/" target="_blank" rel="noopener">django-admin和manage.py中</a> 阅读有关的所有详细信息 。</p>
+</blockquote>
+<ul>
+<li><h6 id="内部HelloWorld-目录"><a href="#内部HelloWorld-目录" class="headerlink" title="内部HelloWorld/目录"></a>内部HelloWorld/目录</h6></li>
+</ul>
+<blockquote>
+<p>是项目的实际Python包。它的名称是Python包名称，您需要使用它来导入其中的任何内容（例如HelloWorld.urls）。</p>
+</blockquote>
+<ul>
+<li><h6 id="HelloWorld-init-py"><a href="#HelloWorld-init-py" class="headerlink" title="HelloWorld/init.py"></a>HelloWorld/<strong>init</strong>.py</h6></li>
+</ul>
+<blockquote>
+<p>一个空文件，告诉Python该目录应视为Python软件包。如果您是Python初学者，请在Python官方文档中阅读<a href="#tut-packages">有关包的更多信息</a>。</p>
+</blockquote>
+<ul>
+<li><h6 id="HelloWorld-settings-py"><a href="#HelloWorld-settings-py" class="headerlink" title="HelloWorld/settings.py"></a>HelloWorld/settings.py</h6></li>
+</ul>
+<blockquote>
+<p>此Django项目的设置/配置。 <a href="https://docs.djangoproject.com/en/3.0/topics/settings/" target="_blank" rel="noopener">Django设置</a>将告诉您所有设置的工作方式。</p>
+</blockquote>
+<ul>
+<li><h6 id="HelloWorld-urls-py"><a href="#HelloWorld-urls-py" class="headerlink" title="HelloWorld/urls.py"></a>HelloWorld/urls.py</h6></li>
+</ul>
+<blockquote>
+<p>此Django项目的URL声明；Django支持的网站的“目录”。您可以在<a href="https://docs.djangoproject.com/en/3.0/topics/http/urls/" target="_blank" rel="noopener">URL调度</a>程序中阅读有关URL的更多信息。</p>
+</blockquote>
+<ul>
+<li><h6 id="HelloWorld-asgi-py"><a href="#HelloWorld-asgi-py" class="headerlink" title="HelloWorld/asgi.py"></a>HelloWorld/asgi.py</h6></li>
+</ul>
+<blockquote>
+<p>与ASGI兼容的Web服务器为您的项目提供服务的入口点。有关更多详细信息，请参见<a href="https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/" target="_blank" rel="noopener">如何使用ASGI</a>进行<a href="https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/" target="_blank" rel="noopener">部署</a>。</p>
+</blockquote>
+<ul>
+<li><h6 id="HelloWorld-wsgi-py"><a href="#HelloWorld-wsgi-py" class="headerlink" title="HelloWorld/wsgi.py"></a>HelloWorld/wsgi.py</h6></li>
+</ul>
+<blockquote>
+<p>与WSGI兼容的Web服务器为您的项目提供服务的入口点。有关更多详细信息，请参见<a href="https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/" target="_blank" rel="noopener">如何使用WSGI</a>进行<a href="https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/" target="_blank" rel="noopener">部署</a></p>
+</blockquote>
+<ul>
+<li><h6 id="运行django"><a href="#运行django" class="headerlink" title="运行django"></a>运行django</h6></li>
+</ul>
+<blockquote>
+<p>在根目录下，在终端中运行：python manage.py runserver 127.0.0.1:8000</p>
+<p>在browser中，输入127.0.0.1:8000</p>
+</blockquote>
+<h4 id="创建工程应用app"><a href="#创建工程应用app" class="headerlink" title="创建工程应用app"></a>创建工程应用app</h4><ul>
+<li><h6 id="创建新的app，使用系统模块manage"><a href="#创建新的app，使用系统模块manage" class="headerlink" title="创建新的app，使用系统模块manage"></a>创建新的app，使用系统模块manage</h6></li>
+</ul>
+<blockquote>
+<p> 回到根目录，进入终端：python manage.py startapp name</p>
+</blockquote>
+<ul>
+<li><h6 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h6></li>
+</ul>
+<blockquote>
+<p>需要知道地址怎么到server的，访问urls.py中的方法，执行urlpatterns中的方法</p>
+<p>创建的app中的views.py模块中，定义方法</p>
+<p><img src="https://i.loli.net/2020/05/14/a1u3CwOQHek2FWR.jpg" alt=""> </p>
+<p>在urls.py模块中，引入login方法，urlpatterns变量中，调用login方法</p>
+<p><img src="https://i.loli.net/2020/05/14/MQjWEqdRBs8uaeP.jpg" alt=""> </p>
+</blockquote>
+<ul>
+<li><em>用户在敲下你的网址并回车，生成请求</em></li>
+<li><em>请求传递到urls.py；Django去urlpatterns中匹配链接（Django会在匹配到的第一个就停下来）</em></li>
+<li><em>一旦匹配成功，Django便会给出相应的view页面（该页面可以为一个Python的函数，或者基于view（Django内置的）的类），也就是用户看到的页面</em></li>
+<li><em>若匹配失败，则出现错误的页面</em></li>
+<li><em>一个工程项目，有很多个APP，每个APP都是工程组成的一部分</em></li>
+</ul>
+<h4 id="开发接口"><a href="#开发接口" class="headerlink" title="开发接口"></a>开发接口</h4><ul>
+<li><h5 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h5></li>
+</ul>
+<blockquote>
+<p>都是基于代码</p>
+<p>框架就是把所有的代码进行整合，写的简洁一些，逻辑是没有改变的</p>
+<p>无非是多个中间服务商，Apache，Nginx之类的</p>
+<p>只需要知道url跳转到哪儿，在哪儿解析，Response什么信息</p>
+<p>真正的API在views模块里面</p>
+<h6 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h6><ul>
+<li>代理端口需区分，否则会冲突 </li>
+<li>HTML中form表单，与from区分</li>
+<li>HTML中路径需以/斜杠结尾</li>
+</ul>
+</blockquote>
+<ul>
+<li><h5 id="Unittest"><a href="#Unittest" class="headerlink" title="Unittest"></a>Unittest</h5><ul>
+<li><h6 id="创建一个类的时候，继承Unittest框架中TestCase类"><a href="#创建一个类的时候，继承Unittest框架中TestCase类" class="headerlink" title="创建一个类的时候，继承Unittest框架中TestCase类"></a>创建一个类的时候，继承Unittest框架中TestCase类</h6></li>
+<li><h6 id="内置方法"><a href="#内置方法" class="headerlink" title="内置方法"></a>内置方法</h6><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Describe</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>setUp</td>
+<td>每次方法之前执行</td>
+</tr>
+<tr>
+<td>tearDown</td>
+<td>每次方法之后执行</td>
+</tr>
+<tr>
+<td>sefUpClass</td>
+<td>类执行前执行</td>
+</tr>
+<tr>
+<td>tearDownClass</td>
+<td>类执行后执行</td>
+</tr>
+<tr>
+<td>Test_XX</td>
+<td>单词在前的case方法，缺少test则不会运行</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><h6 id="断言–assert"><a href="#断言–assert" class="headerlink" title="断言–assert"></a>断言–assert</h6><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Describe</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>assertEqual</td>
+<td>x == y ？None : z</td>
+</tr>
+<tr>
+<td>assertNotEqual</td>
+<td>x != y ？None : z</td>
+</tr>
+<tr>
+<td>assertTrue</td>
+<td>type(x) == True ? None : z</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ul>
+<li><h6 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h6><p><code>相比类变量更加快捷</code></p>
+<blockquote>
+<p><strong>命名方式</strong>：Globals()[‘变量名’] 解决依赖</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><h6 id="跳过case执行："><a href="#跳过case执行：" class="headerlink" title="跳过case执行："></a>跳过case执行：</h6><blockquote>
+<p><strong>语法糖</strong>：@unittest.skip(‘case’)</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><h6 id="创建容器"><a href="#创建容器" class="headerlink" title="创建容器"></a>创建容器</h6><blockquote>
+<p><em>创建语法</em></p>
+<pre class=" language-python"><code class="language-python">Suite <span class="token operator">=</span> unittest<span class="token punctuation">.</span>TestSuite<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p><em>添加case</em></p>
+<pre class=" language-python"><code class="language-python">Suite<span class="token punctuation">.</span>addTest<span class="token punctuation">(</span>类名<span class="token punctuation">(</span>casename<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
+<p><em>可添加多个case</em></p>
+<p><em>执行容器</em></p>
+<pre class=" language-python"><code class="language-python">unittest<span class="token punctuation">.</span>TextTestRunner<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>run<span class="token punctuation">(</span>容器名<span class="token punctuation">)</span></code></pre>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><h6 id="结合HTMLTestRunner，生成TestReport"><a href="#结合HTMLTestRunner，生成TestReport" class="headerlink" title="结合HTMLTestRunner，生成TestReport"></a>结合HTMLTestRunner，生成TestReport</h6><blockquote>
+<p><em>搜索Python3 HTMLTestRunner，最好是GitHub上面的</em></p>
+<p><em>创建HTMLTestRunner.py，移至Python-&gt;lib目录</em></p>
+<p><em>在case文件中，引入HTMLTestRunner模块</em></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><h6 id="Unittest之面试"><a href="#Unittest之面试" class="headerlink" title="Unittest之面试"></a>Unittest之面试</h6><blockquote>
+<p>如何使用Python开发测试框架</p>
+<blockquote>
+<p>语言：Python</p>
+<p>接口：使用requests第三方库</p>
+<p>管理case：unittest框架-断言-skipcase-suite容器-依赖关系</p>
+<p>报告：HTMLTestRunner</p>
+<p>数据管理：Excel，MySql</p>
+<p>Case执行：持续集成或批处理文件</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><h6 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h6><blockquote>
+<p>Unittest中，case是按照ascll码比较，进行升序执行</p>
+<p>尽量减少依赖执行</p>
+<p>GET请求URL与Data分离传参，无响应</p>
+<p>Globals()[‘变量’]  = data 下个case调用会报错 </p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><h5 id="Mock服务"><a href="#Mock服务" class="headerlink" title="Mock服务"></a>Mock服务</h5><ul>
+<li><h6 id="以代码来实现自动响应请求的功能，模拟返回数据"><a href="#以代码来实现自动响应请求的功能，模拟返回数据" class="headerlink" title="以代码来实现自动响应请求的功能，模拟返回数据"></a>以代码来实现自动响应请求的功能，模拟返回数据</h6></li>
+<li><h6 id="引入mock"><a href="#引入mock" class="headerlink" title="引入mock"></a>引入mock</h6><pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> unittest<span class="token punctuation">.</span>mock</code></pre>
+</li>
+<li><h6 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h6><pre class=" language-python"><code class="language-python">mock_name <span class="token operator">=</span> mock<span class="token punctuation">.</span>Mock<span class="token punctuation">(</span>return_value<span class="token operator">=</span>模拟数据<span class="token punctuation">)</span>
+请求方法 <span class="token operator">=</span>  mock_name<span class="token punctuation">(</span>改变返回模拟数据<span class="token punctuation">)</span></code></pre>
+</li>
+<li><h6 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h6><pre class=" language-python"><code class="language-python">mock_data <span class="token operator">=</span> mock<span class="token punctuation">.</span>Mock<span class="token punctuation">(</span>return_value<span class="token operator">=</span>response_data<span class="token punctuation">)</span>
+
+method <span class="token operator">=</span> mock_data
+
+res <span class="token operator">=</span> method<span class="token punctuation">(</span>request_data<span class="token punctuation">,</span> url<span class="token punctuation">,</span> method<span class="token punctuation">)</span></code></pre>
+</li>
+<li><h6 id="重构封装mock"><a href="#重构封装mock" class="headerlink" title="重构封装mock"></a>重构封装mock</h6><pre class=" language-python"><code class="language-python">封装mock<span class="token operator">-</span>method
+
+<span class="token keyword">from</span> unittest <span class="token keyword">import</span> mock
+
+<span class="token keyword">def</span> <span class="token function">mock_test</span><span class="token punctuation">(</span>mock_method<span class="token punctuation">,</span> url<span class="token punctuation">,</span> method<span class="token punctuation">,</span> request_data<span class="token operator">=</span>None<span class="token punctuation">,</span> response_data<span class="token operator">=</span>None<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">if</span> response_data <span class="token operator">==</span> None<span class="token punctuation">:</span>
+
+        res <span class="token operator">=</span> mock_method<span class="token punctuation">(</span>url<span class="token punctuation">,</span> method<span class="token punctuation">,</span> response_data<span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> res
+
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+
+        mock_data <span class="token operator">=</span> mock<span class="token punctuation">.</span>Mock<span class="token punctuation">(</span>return_value<span class="token operator">=</span>response_data<span class="token punctuation">)</span>
+
+        mock_method <span class="token operator">=</span> mock_data
+
+        res <span class="token operator">=</span> mock_method<span class="token punctuation">(</span>request_data<span class="token punctuation">,</span> url<span class="token punctuation">,</span> method<span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> res</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h5 id="设计接口自动化测试框架"><a href="#设计接口自动化测试框架" class="headerlink" title="设计接口自动化测试框架"></a>设计接口自动化测试框架</h5><ul>
+<li><h6 id="Case过多，避免繁琐操作"><a href="#Case过多，避免繁琐操作" class="headerlink" title="Case过多，避免繁琐操作"></a>Case过多，避免繁琐操作</h6></li>
+<li><h6 id="不排除某些需求，设定特殊的值，而手动添加"><a href="#不排除某些需求，设定特殊的值，而手动添加" class="headerlink" title="不排除某些需求，设定特殊的值，而手动添加"></a>不排除某些需求，设定特殊的值，而手动添加</h6></li>
+<li><h6 id="编写接口测试用例"><a href="#编写接口测试用例" class="headerlink" title="编写接口测试用例"></a>编写接口测试用例</h6><p><img src="https://i.loli.net/2020/05/14/4GwtTXS5FRcCquj.jpg" alt="用例示范"></p>
+</li>
+<li><h6 id="需要考虑的点"><a href="#需要考虑的点" class="headerlink" title="需要考虑的点"></a>需要考虑的点</h6><blockquote>
+<p>接口地址</p>
+<p>请求数据</p>
+<p>接口类型</p>
+<p>预期结果</p>
+<p>Header - cookie</p>
+<p>数据依赖–接口自动化的难点</p>
+</blockquote>
+</li>
+<li><h6 id="操作Excel"><a href="#操作Excel" class="headerlink" title="操作Excel"></a>操作Excel</h6><blockquote>
+<p>定义一个类</p>
+</blockquote>
+<img src="https://i.loli.net/2020/05/14/O7Kc5nXN3WATsZR.jpg" alt="用例示范" style="zoom:200%;" /> 
+</li>
+<li><h6 id="重构封装excel函数"><a href="#重构封装excel函数" class="headerlink" title="重构封装excel函数"></a>重构封装excel函数</h6><blockquote>
+<p><em>封装request_data, header</em></p>
+<p><em>封装调用类</em></p>
+</blockquote>
+</li>
+<li><h6 id="封装request类"><a href="#封装request类" class="headerlink" title="封装request类"></a>封装request类</h6><blockquote>
+<p>对response_data，进行格式化</p>
+<pre class=" language-python"><code class="language-python">Json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>response<span class="token punctuation">,</span> ensure_ascii<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> intent<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> sort_keys<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></code></pre>
+<p>使用ensure_ascii的注意事项：</p>
+<p><em>json_dumps(dict)时，如果dict包含有汉字，一定加上 ensure_ascii=False。否则按参数默认值True，意思是保证dumps之后的结果里所有的字符都能够被 ascii 表示，汉字在ascii的字符集里面，因此经过dumps以后的str里，汉字会变成对应的unicode。</em></p>
+</blockquote>
+</li>
+<li><p>写入excel测试结果</p>
+<blockquote>
+<p>判断接口返回状态：</p>
+<p><em>接口是否通畅</em></p>
+<p>调用status_code方法：</p>
+</blockquote>
+</li>
+<li><p>引入jsonpath_rw 第三方库</p>
+<blockquote>
+<p>从第三方库中引入jsonpath，parse 方法</p>
+<pre class=" language-python"><code class="language-python">B <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'foo'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">'baz'</span><span class="token punctuation">:</span> <span class="token string">'news'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'baz'</span><span class="token punctuation">:</span> <span class="token string">'music'</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span></code></pre>
+<p>赋予规则</p>
+<pre class=" language-python"><code class="language-python">A <span class="token operator">=</span> parse<span class="token punctuation">(</span>‘foo<span class="token punctuation">[</span><span class="token operator">*</span><span class="token punctuation">]</span><span class="token punctuation">.</span>data’<span class="token punctuation">)</span></code></pre>
+<p>解析数据</p>
+<pre class=" language-python"><code class="language-python">C <span class="token operator">=</span> A<span class="token punctuation">.</span>find<span class="token punctuation">(</span>b<span class="token punctuation">)</span></code></pre>
+<p>使用列表推导式，获取数据</p>
+<pre class=" language-python"><code class="language-python">Data <span class="token operator">=</span> <span class="token punctuation">[</span>match<span class="token punctuation">.</span>value <span class="token keyword">for</span> match <span class="token keyword">in</span> C<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> index get content</code></pre>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
 
             </div>
             <hr/>
@@ -1011,7 +1189,7 @@ well
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
             + 'From: 清风明月<br />'
-            + 'Author: MingHui<br />'
+            + 'Author: Ming Hui<br />'
             + 'Link: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -1113,7 +1291,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2020</span>
-            <a href="/about" target="_blank">MingHui</a>
+            <a href="/about" target="_blank">Ming Hui</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

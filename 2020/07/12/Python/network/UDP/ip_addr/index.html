@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="json xml, 清风明月">
+    <meta name="keywords" content="ip_addr, 清风明月">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>json xml | 清风明月</title>
+    <title>ip_addr | 清风明月</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -322,12 +322,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/00.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">json xml</h1>
+                    <h1 class="description center-align post-title">ip_addr</h1>
                 </div>
             </div>
         </div>
@@ -349,8 +349,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Basics/">
-                                <span class="chip bg-color">Basics</span>
+                            <a href="/tags/Learn/">
+                                <span class="chip bg-color">Learn</span>
                             </a>
                         
                     </div>
@@ -361,8 +361,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Data/" class="post-category">
-                                Data
+                            <a href="/categories/Network/" class="post-category">
+                                Network
                             </a>
                         
                     </div>
@@ -390,245 +390,81 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h2><h3 id="简述："><a href="#简述：" class="headerlink" title="简述："></a>简述：</h3><p><em>JavaScript Object Notation   译为  JavaScript 对象标记</em></p>
-<p><em>本质概述：是一种轻量级的数据交换格式</em></p>
-<p><em>再次强调 JSON是 一种数据交换格式</em></p>
-<p><em>字符串是JSON的表现形式/载体</em></p>
-<h3 id="JSON对象-与-JSON字符串的区别"><a href="#JSON对象-与-JSON字符串的区别" class="headerlink" title="JSON对象 与 JSON字符串的区别"></a>JSON对象 与 JSON字符串的区别</h3><ul>
-<li><h4 id="符合JSON格式的字符串叫做JSON字符串"><a href="#符合JSON格式的字符串叫做JSON字符串" class="headerlink" title="符合JSON格式的字符串叫做JSON字符串"></a>符合JSON格式的字符串叫做JSON字符串</h4><ul>
-<li><h5 id="错误JSON格式"><a href="#错误JSON格式" class="headerlink" title="错误JSON格式"></a>错误JSON格式</h5><pre class=" language-python"><code class="language-python"><span class="token punctuation">{</span>a<span class="token punctuation">:</span><span class="token string">"Python"</span></code></pre>
+                <h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a><strong>IP地址</strong></h3><h5 id="什么是IP地址"><a href="#什么是IP地址" class="headerlink" title="什么是IP地址"></a><strong>什么是IP地址</strong></h5><ul>
+<li><p>用来标记网络上的一台电脑</p>
+</li>
+<li><p>局域网ip地址可以相同，但会导致冲突（数据丢失）</p>
+</li>
+<li><p>所以ip地址允许重复</p>
 </li>
 </ul>
+<h5 id="IP地址的作用"><a href="#IP地址的作用" class="headerlink" title="IP地址的作用"></a><strong>IP地址的作用</strong></h5><p><img src="https://i.loli.net/2020/05/14/1CkuZVbasIdU6fS.jpg" alt="拓扑图"> </p>
+<ul>
+<li>IP地址：用来在网络中标记一个终端，比如192.168.1.1; 在本地局域网内是唯一的。</li>
+</ul>
+<p><strong>IP地址的分类（了解）</strong></p>
+<p>每一个IP地址包括两部分：<strong>网络地址与主机地址</strong></p>
+<p><img src="https://i.loli.net/2020/05/14/LoZUA2qjb831dJD.jpg" alt="IP分类示意图"> </p>
+<ul>
+<li><p><strong>pv4 全称 internet protocol version 4</strong> </p>
+<p>概述：Ip地址标记网络里面的第四种版本</p>
+<p>格式：xxx.xxx.xxx.xxx 最大值是：255  最小值是：0</p>
+<p>总数应该是：256<em>256</em>256*256</p>
+<p>拓展：ip v1-v3-v5是实验版本</p>
 </li>
 </ul>
 <ul>
-<li><h5 id="正确JSON格式"><a href="#正确JSON格式" class="headerlink" title="正确JSON格式"></a>正确JSON格式</h5><pre class=" language-python"><code class="language-python"><span class="token punctuation">{</span>a<span class="token punctuation">:</span><span class="token string">"Python"</span><span class="token punctuation">}</span></code></pre>
-</li>
-<li><h5 id="JSON和每种语言下特定的数据结构，进行数据交换，转换"><a href="#JSON和每种语言下特定的数据结构，进行数据交换，转换" class="headerlink" title="JSON和每种语言下特定的数据结构，进行数据交换，转换"></a>JSON和每种语言下特定的数据结构，进行数据交换，转换</h5></li>
-</ul>
-<h3 id="JSON对象，-JSON，-JSON字符串-之间的区别"><a href="#JSON对象，-JSON，-JSON字符串-之间的区别" class="headerlink" title="JSON对象， JSON，  JSON字符串  之间的区别"></a>JSON对象， JSON，  JSON字符串  之间的区别</h3><blockquote>
-<ul>
-<li><h6 id="绝大多数的答案，都站在JavaScript语言的角度，阐述区别"><a href="#绝大多数的答案，都站在JavaScript语言的角度，阐述区别" class="headerlink" title="绝大多数的答案，都站在JavaScript语言的角度，阐述区别"></a>绝大多数的答案，都站在JavaScript语言的角度，阐述区别</h6></li>
-<li><h6 id="JSON是REST服务的标准格式"><a href="#JSON是REST服务的标准格式" class="headerlink" title="JSON是REST服务的标准格式"></a>JSON是REST服务的标准格式</h6></li>
-<li><h6 id="JSON的制定并不是专门为JavaScript设计的"><a href="#JSON的制定并不是专门为JavaScript设计的" class="headerlink" title="JSON的制定并不是专门为JavaScript设计的"></a>JSON的制定并不是专门为JavaScript设计的</h6></li>
-<li><h6 id="它只是一种传输数据的一种格式"><a href="#它只是一种传输数据的一种格式" class="headerlink" title="它只是一种传输数据的一种格式"></a>它只是一种传输数据的一种格式</h6></li>
-<li><h6 id="JavaScript与JSON的数据交换里面，和Python，C-没有区别"><a href="#JavaScript与JSON的数据交换里面，和Python，C-没有区别" class="headerlink" title="JavaScript与JSON的数据交换里面，和Python，C#没有区别"></a>JavaScript与JSON的数据交换里面，和Python，C#没有区别</h6></li>
-<li><h6 id="JSON的数据类型与JavaScript过于相似"><a href="#JSON的数据类型与JavaScript过于相似" class="headerlink" title="JSON的数据类型与JavaScript过于相似"></a>JSON的数据类型与JavaScript过于相似</h6></li>
-<li><h6 id="JSON有自己的数据类型，仅和JavaScript相似"><a href="#JSON有自己的数据类型，仅和JavaScript相似" class="headerlink" title="JSON有自己的数据类型，仅和JavaScript相似"></a>JSON有自己的数据类型，仅和JavaScript相似</h6></li>
-<li><h6 id="JavaScript只是一个实现标准方案之一"><a href="#JavaScript只是一个实现标准方案之一" class="headerlink" title="JavaScript只是一个实现标准方案之一"></a>JavaScript只是一个实现标准方案之一</h6></li>
-<li><h6 id="标准为：ECMASCRIPT-gt-ActionScript-gt-JSON的一个版本"><a href="#标准为：ECMASCRIPT-gt-ActionScript-gt-JSON的一个版本" class="headerlink" title="标准为：ECMASCRIPT -&gt; ActionScript -&gt; JSON的一个版本"></a>标准为：ECMASCRIPT -&gt; ActionScript -&gt; JSON的一个版本</h6></li>
-<li><h6 id="某种程度JSON和JavaScript是一种平级的语言"><a href="#某种程度JSON和JavaScript是一种平级的语言" class="headerlink" title="某种程度JSON和JavaScript是一种平级的语言"></a>某种程度JSON和JavaScript是一种平级的语言</h6></li>
-<li><h6 id="误区（JSON与JavaScript，没有直接关系）"><a href="#误区（JSON与JavaScript，没有直接关系）" class="headerlink" title="误区（JSON与JavaScript，没有直接关系）"></a>误区（JSON与JavaScript，没有直接关系）</h6><p><em>JSON与JavaScript都是对ECMASCRIPT这个W3C（团队）它所制定的脚本的规范和标准实现</em></p>
-<p><em>JSON在最开始在前后端的分离起到了重要的作用，而服务器的语言种类繁多，前端最主流的就是JavaScript，因为JSON被大量的应用在JavaScript的交互中</em></p>
-<p><em>还有一个微软的TypeScript只是JavaScript的超集</em></p>
-</li>
-<li><h6 id="JSON对象"><a href="#JSON对象" class="headerlink" title="JSON对象"></a>JSON对象</h6><p><em>(1) 定义非常片面（在JavaScript中是存在的）</em></p>
-<p><em>(2) 放到 Python中的话，是没有这个JSON对象的</em></p>
+<li><p><strong>Ipv6 全称 internet protocol version 6</strong></p>
+<p>​    概述：因为ipv4的IP段使用已饱和，所以诞生ipv6，且尚未普及</p>
+<p>​    格式：x:x:x:x:x:x:x:x，其中每个 x 是地址的 8 个 16 位部分的十六进制值。</p>
+<p>​    IPv6地址范围从 0000:0000:0000:0000:0000:0000:0000:0000 至 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff。</p>
+<p>​    总数：能产生2的128次方个IP地址，其资源几乎是无穷的</p>
 </li>
 </ul>
-<p>  <img src="https://i.loli.net/2020/05/14/lKF2evBjd6oEb9p.jpg" alt="wps8.jpg"> </p>
+<p>​    </p>
+<p><strong>A类IP地址</strong></p>
+<blockquote>
+<p>192.168.0.1中 192.168.0代表网络地址，168.0.1代表主机地址</p>
+<p>其中主机地址0与255不能用，可以ip池为256<em>256</em>256=16777216种</p>
 </blockquote>
-<h3 id="轻量级的数据格式"><a href="#轻量级的数据格式" class="headerlink" title="轻量级的数据格式"></a>轻量级的数据格式</h3><ul>
-<li><h4 id="外部数据交换的主流格式"><a href="#外部数据交换的主流格式" class="headerlink" title="外部数据交换的主流格式"></a>外部数据交换的主流格式</h4><ul>
-<li><h5 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h5><blockquote>
-<p><em>使用较少，特殊情况例外</em></p>
-<p><em>在JSON出现之前，为主流交换格式</em></p>
-<p><em>在特定的领域，注重数据结构的领域会使用</em></p>
-<p><em>阅读稍显复杂</em></p>
-<p><em>跨语言交换数据</em></p>
+<p><strong>B类IP地址</strong></p>
+<blockquote>
+<p>192.168.0.1中 192.168.0代表网络地址，0.1代表主机地址</p>
+<p>其中主机地址0与255不能用，可以ip池为256*256=65536种</p>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><h5 id="JSON的优势"><a href="#JSON的优势" class="headerlink" title="JSON的优势"></a>JSON的优势</h5><blockquote>
-<p><em>易于阅读</em></p>
-<p><em>易于解析</em></p>
+<p><strong>C类IP地址</strong></p>
+<blockquote>
+<p>192.168.0.1中 192.168.0代表网络地址，1代表主机地址</p>
+<p>其中主机地址0与255不能用，可以ip池为254种</p>
 </blockquote>
-</li>
-</ul>
-<ul>
-<li><h5 id="JSON作为数据交互的格式，存在组装和被解析的过程"><a href="#JSON作为数据交互的格式，存在组装和被解析的过程" class="headerlink" title="JSON作为数据交互的格式，存在组装和被解析的过程"></a>JSON作为数据交互的格式，存在组装和被解析的过程</h5><blockquote>
-<p><em>网络传输效率高</em></p>
-<p><em>数据量同XML相比，要更少</em></p>
+<p><strong>D类IP地址用于多点广播</strong></p>
+<blockquote>
+<p>D类IP地址第一个字节”1110”开始，它是一个专门保留的地址。</p>
+<p>它并不指向特定的网络地址，目前这一类地址被用在多点广播中</p>
+<p>多点广播地址用来一次寻址一组计算机s地址范围224.0.0.1-239.255.255.254</p>
 </blockquote>
-</li>
-</ul>
-<ul>
-<li><h5 id="跨语言交换数据"><a href="#跨语言交换数据" class="headerlink" title="跨语言交换数据"></a>跨语言交换数据</h5><blockquote>
-<p><em>Python调用C++，Java调用.Net</em></p>
-<p><em>把某一种语言的功能，做成一个服务，利用这个服务的特性使用JSON来进行传递数据</em></p>
+<p><strong>E类IP地址</strong></p>
+<blockquote>
+<p>以”1111”开始，为将来留作保留</p>
+<p>仅作为实验与开发使用</p>
 </blockquote>
-</li>
-</ul>
-<hr>
-<h3 id="web结构"><a href="#web结构" class="headerlink" title="web结构"></a>web结构</h3><img src="https://i.loli.net/2020/05/14/X8y7qNwKJLCHAS3.jpg" alt="wps9.jpg" style="zoom:150%;" /> 
-
-<img src="https://i.loli.net/2020/05/14/w5rL1zEeimZpOI4.jpg" alt="wps10.jpg" style="zoom:150%;" /> 
-
-<hr>
-<h3 id="反序列化"><a href="#反序列化" class="headerlink" title="反序列化"></a>反序列化</h3><blockquote>
-<p><em>当你拿到的JSON，不是一个str，而是一个object，这是框架默认把str转换成一个object，但是我们原生拿到的就是一个str</em></p>
-<p><em>拿到JSON，能够快速访问JSON字符串中相关的信息</em></p>
-<p><em>把JSON字符串转换成Python中已知的数据结构</em></p>
+<p><strong>私有IP</strong></p>
+<blockquote>
+<p>在这么多网络IP中，国际规定中有一部分IP是用于我们的局域网使用，也就是属于私网IP，不在公网中使用，它们的范围是：</p>
+<p>10.0.0.0 ~ 10.255.255.255</p>
+<p>172.16.0.0 ~ 172.31.255.255</p>
+<p>192.168.0.0 ~ 192.168.255.255</p>
 </blockquote>
-<ul>
-<li><h4 id="反序列化过程"><a href="#反序列化过程" class="headerlink" title="反序列化过程"></a>反序列化过程</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 引入内置json模块，其中包含一系列操纵JSON数据的方法</span>
-<span class="token keyword">import</span> json
-
-<span class="token comment" spellcheck="true"># json格式中，字符串的key 必需使用双引号，bool值为小写</span>
-json_str <span class="token operator">=</span> <span class="token string">'{"name":"qiyue", "age":18, "2":false}'</span>    
-
-JavaScript中为object数据结构
-
-<span class="token comment" spellcheck="true"># 调用json模块中的内置方法，转换json字符串类型，转换为Python数据类型</span>
-Student <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>json_str<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>Student<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>type<span class="token punctuation">(</span>Student<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-转换后部分JSON格式特征，会转换为Python特征
-<span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'qiyue'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">}</span>    
-Python用dict类型，承载JSON中的object类型
-<span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'dict'</span><span class="token operator">></span></code></pre>
-<p><em>同一JSON字符串，在不同语言中，可能转换成不同的数据类型</em></p>
-<p><em>这个转换过程 称为 *</em>反序列化***</p>
-</li>
-</ul>
-<ul>
-<li><h4 id="拓展：JSON数据类型-array（数组）"><a href="#拓展：JSON数据类型-array（数组）" class="headerlink" title="拓展：JSON数据类型  array（数组）"></a>拓展：JSON数据类型  array（数组）</h4><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 反序列化</span>
-<span class="token comment" spellcheck="true"># 引入内置json模块</span>
-<span class="token keyword">import</span> json <span class="token keyword">as</span> x
-
-json_str <span class="token operator">=</span> <span class="token string">'[{"name":"qiyue", "age":18, "2":false}, {"name":"qiyue", "age":18, "2":false}]'</span>
-
-<span class="token comment" spellcheck="true"># 包含两个对象的数组</span>
-
-Student <span class="token operator">=</span> x<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>json_str<span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># 调用json模块中的内置方法，转换json格式字符串</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>Student<span class="token punctuation">)</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>type<span class="token punctuation">(</span>Student<span class="token punctuation">)</span><span class="token punctuation">)</span>    Python用list类型，承载JSON中的array类型
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>Student<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>    访问数组中对象的key</code></pre>
-</li>
-</ul>
-<p>  <em>数组表示为一种集合，类似与 Python 中的 list，tuple 。只不过Python把集合分的比较细</em></p>
-<p>  <em>比如 PHP 中只有一个数组，且非常强大的</em> </p>
-<p>  <em>这个是不同语言对集合不同的解构形式</em></p>
-<p>  <em>数组其实就是一个集合</em></p>
-<ul>
-<li><h4 id="JSON-对应-Python-的数据类型"><a href="#JSON-对应-Python-的数据类型" class="headerlink" title="JSON  对应  Python 的数据类型"></a>JSON  对应  Python 的数据类型</h4><table>
-<thead>
-<tr>
-<th>JSON</th>
-<th>Python</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>object</td>
-<td>dict</td>
-</tr>
-<tr>
-<td>array</td>
-<td>list</td>
-</tr>
-<tr>
-<td>string</td>
-<td>str</td>
-</tr>
-<tr>
-<td>number</td>
-<td>int</td>
-</tr>
-<tr>
-<td>number</td>
-<td>float</td>
-</tr>
-<tr>
-<td>true/false</td>
-<td>True/False</td>
-</tr>
-<tr>
-<td>null</td>
-<td>None</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<p><em>若精通一门语言，入门其他语言相对比较容易</em></p>
-<p><em>因为绝大数语言，对于基本数据结构的定义都大同小异</em></p>
-<p><em>例如<strong>循环语句</strong>，<strong>面向对象</strong>等</em></p>
-<p><em>现在很多语言就是经典C，C语言的<strong>语法糖</strong>，内部的实现机制，内存管理不同</em></p>
-<p><em>现在很多语言就是<strong>类 C</strong>语言  ，语言就是一种工具</em></p>
-<hr>
-<h3 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h3><p><em>把Python的数据类型，向JSON字符串转换的过程</em></p>
-<ul>
-<li><h4 id="序列化过程"><a href="#序列化过程" class="headerlink" title="序列化过程"></a>序列化过程</h4><pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> json
-
-Student <span class="token operator">=</span> <span class="token punctuation">[</span>
-
-     <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'qiyue'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-
-     <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'qiyue'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">:</span> <span class="token number">18</span><span class="token punctuation">}</span>
-
-    <span class="token punctuation">]</span>
-
-json_str <span class="token operator">=</span> json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>Student<span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># dumps 接收一个object参数，dict 也是属于 object</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>json_str<span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># [{"name": "qiyue", "age": 18, "2": false}, {"name": "qiyue", "age": 18}]</span>
-
-<span class="token keyword">print</span><span class="token punctuation">(</span>type<span class="token punctuation">(</span>json_str<span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true"># &lt;class 'str'></span></code></pre>
-<p><em>不仅是 Python 数据向 JSON 转换，是序列化</em>    </p>
-<p><em>把 XML 的字符串向 Python 转换，也是反序列化 / 序列化</em></p>
-</li>
-</ul>
-<ul>
-<li><h4 id="怎么把一个object存储到数据库里面去？"><a href="#怎么把一个object存储到数据库里面去？" class="headerlink" title="怎么把一个object存储到数据库里面去？"></a>怎么把一个object存储到数据库里面去？</h4><p> <code>数据库是一个个的二维表，没有办法去表示object</code></p>
-<ul>
-<li><h6 id="错误示例："><a href="#错误示例：" class="headerlink" title="错误示例："></a>错误示例：</h6><p><em>把 object 序列化成 JSON 字符串，或 XML 字符串</em></p>
-<p><em>然后把字符串，存储到数据库里面去</em></p>
-<p><em>需要的时候，从数据库里面读取出来，然后进行反序列化    *</em>效率低 / 不可取***</p>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><h6 id="正确示例："><a href="#正确示例：" class="headerlink" title="正确示例："></a>正确示例：</h6><p><em>MySQL 等数据库适合存储比较简单的数据结构</em></p>
-<p><em>应该把 object 拆分成一个个属性，进行存储</em></p>
-</li>
-</ul>
-<p>  PS：实在是想存储 object，可使用 <strong>NOSQL</strong> <strong>MongoDB</strong></p>
-<ul>
-<li><h4 id="序列化的意义"><a href="#序列化的意义" class="headerlink" title="序列化的意义"></a>序列化的意义</h4><p><em>一般通过服务获取到其他语言进行序列化的 JSON 字符串</em></p>
-</li>
-</ul>
-<ul>
-<li><h4 id="XML-数据格式代码"><a href="#XML-数据格式代码" class="headerlink" title="XML 数据格式代码"></a>XML 数据格式代码</h4><pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8”?></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>note</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>to</span><span class="token punctuation">></span></span>Tove<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>to</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>from</span><span class="token punctuation">></span></span>Jani<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>from</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>heading</span><span class="token punctuation">></span></span>Reminder<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>heading</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>Don’t forget me this weekend!
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>note</span><span class="token punctuation">></span></span> </code></pre>
-</li>
-</ul>
+<p><strong>注意事项</strong></p>
+<blockquote>
+<p>IP地址127·0·0·1 ~ 127·255·255·255用于回路测试。</p>
+<p>如：127·0·0·1 可以代表本机IP，用于<a href="http://127.0.0.1" target="_blank" rel="noopener">http://127.0.0.1</a> </p>
+<p>就可以测试本机中配置的Web服务器</p>
+</blockquote>
+<p><strong>总结</strong></p>
+<blockquote>
+<p>根据使用IP的主机数，来划分各类IP段</p>
+</blockquote>
 
             </div>
             <hr/>
@@ -644,7 +480,7 @@ json_str <span class="token operator">=</span> json<span class="token punctuatio
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">MingHui</a>
+                    <a href="/about" rel="external nofollow noreferrer">Ming Hui</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -654,7 +490,7 @@ json_str <span class="token operator">=</span> json<span class="token punctuatio
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/07/12/Python/basic/json%20xml/">http://yoursite.com/2020/07/12/Python/basic/json%20xml/</a>
+                    <a href="http://yoursite.com/2020/07/12/Python/network/UDP/ip_addr/">http://yoursite.com/2020/07/12/Python/network/UDP/ip_addr/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -667,7 +503,7 @@ json_str <span class="token operator">=</span> json<span class="token punctuatio
                     All articles in this blog are used except for special statements
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     reprint polocy. If reproduced, please indicate source
-                    <a href="/about" target="_blank">MingHui</a>
+                    <a href="/about" target="_blank">Ming Hui</a>
                     !
                 </span>
             </div>
@@ -692,8 +528,8 @@ json_str <span class="token operator">=</span> json<span class="token punctuatio
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Basics/">
-                                    <span class="chip bg-color">Basics</span>
+                                <a href="/tags/Learn/">
+                                    <span class="chip bg-color">Learn</span>
                                 </a>
                             
                         </div>
@@ -865,26 +701,33 @@ json_str <span class="token operator">=</span> json<span class="token punctuatio
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/07/12/Python/basic/re/">
+                <a href="/2020/07/12/Python/network/UDP/linux%20cmd/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="re">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="linux-cmd">
                         
-                        <span class="card-title">re</span>
+                        <span class="card-title">linux-cmd</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            正则表达式
-爬虫的基础掌握
-是一个特殊的字符序列
-检测一个字符串是否与我们设定的字符序列，相匹配
-若匹配，则可以快速检索，替换文本的操作
-场景示例1：检测一串数字是否是电话号码
-场景示例2：检测一串字符串是否符合  Email
-把一个文本中
+                            查看操作系统的网卡信息Ubuntu系统
+安装查看工具：sudo apt-get install net-tools
+
+
+
+安装完毕后输入：ifconfig
+
+
+以太网：ens_xxx
+
+
+本地网卡环回：io
+
+
+关闭以太网网卡：sudo i
                         
                     </div>
                     <div class="publish-info">
@@ -895,8 +738,8 @@ json_str <span class="token operator">=</span> json<span class="token punctuatio
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/Linux/" class="post-category">
+                                    Linux
                                 </a>
                             
                             
@@ -921,30 +764,33 @@ json_str <span class="token operator">=</span> json<span class="token punctuatio
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/12/Python/basic/extend/">
+                <a href="/2020/07/07/Python/interface/interface_test_basic/">
                     <div class="card-image">
                         
+                        <img src="/medias/2.jpg" class="responsive-img" alt="interface_test_basic">
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="extend">
-                        
-                        <span class="card-title">extend</span>
+                        <span class="card-title">interface_test_basic</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            导语产品是需要打磨出来的，重点在于打磨二字，没有什么产品可以一就而成
-字典替代switch
-Switch语句同样为条件分支语句
-其他语言中Switch语句的作用，C#
-字典映射替代switch语句
-示例：def get_Sunday():
+                            为什么要做接口测试？
+在日常前后端开发中，他们之间为什么是独立完成的？
 
+接口的由来：连接前后端，以及移动端
+
+不同端的工作进度不一样，需要对最开始出来的接口，进行接口测试
+
+
+
+接口测试带来了哪些好处？
+比如调用第三方的接口，淘宝，银行，
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-07
                             </span>
                         <span class="publish-author">
                             
@@ -961,8 +807,8 @@ Switch语句同样为条件分支语句
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Learn/">
-                        <span class="chip bg-color">Learn</span>
+                    <a href="/tags/InterFace-Test/">
+                        <span class="chip bg-color">InterFace Test</span>
                     </a>
                     
                 </div>
@@ -1004,7 +850,7 @@ Switch语句同样为条件分支语句
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
             + 'From: 清风明月<br />'
-            + 'Author: MingHui<br />'
+            + 'Author: Ming Hui<br />'
             + 'Link: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -1106,7 +952,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2020</span>
-            <a href="/about" target="_blank">MingHui</a>
+            <a href="/about" target="_blank">Ming Hui</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
