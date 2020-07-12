@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="ip_addr, 清风明月">
+    <meta name="keywords" content="Linux命令, 清风明月">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>ip_addr | 清风明月</title>
+    <title>Linux命令 | 清风明月</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,8 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="清风明月" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="清风明月" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -322,12 +322,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">ip_addr</h1>
+                    <h1 class="description center-align post-title">Linux命令</h1>
                 </div>
             </div>
         </div>
@@ -349,8 +349,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Learn/">
-                                <span class="chip bg-color">Learn</span>
+                            <a href="/tags/Basics/">
+                                <span class="chip bg-color">Basics</span>
                             </a>
                         
                     </div>
@@ -361,8 +361,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Network/" class="post-category">
-                                Network
+                            <a href="/categories/Linux/" class="post-category">
+                                Linux
                             </a>
                         
                     </div>
@@ -390,81 +390,30 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a><strong>IP地址</strong></h3><h5 id="什么是IP地址"><a href="#什么是IP地址" class="headerlink" title="什么是IP地址"></a><strong>什么是IP地址</strong></h5><ul>
-<li><p>用来标记网络上的一台电脑</p>
-</li>
-<li><p>局域网ip地址可以相同，但会导致冲突（数据丢失）</p>
-</li>
-<li><p>所以ip地址允许重复</p>
-</li>
-</ul>
-<h5 id="IP地址的作用"><a href="#IP地址的作用" class="headerlink" title="IP地址的作用"></a><strong>IP地址的作用</strong></h5><p><img src="https://i.loli.net/2020/05/14/1CkuZVbasIdU6fS.jpg" alt="拓扑图"> </p>
-<ul>
-<li>IP地址：用来在网络中标记一个终端，比如192.168.1.1; 在本地局域网内是唯一的。</li>
-</ul>
-<p><strong>IP地址的分类（了解）</strong></p>
-<p>每一个IP地址包括两部分：<strong>网络地址与主机地址</strong></p>
-<p><img src="https://i.loli.net/2020/05/14/LoZUA2qjb831dJD.jpg" alt="IP分类示意图"> </p>
-<ul>
-<li><p><strong>pv4 全称 internet protocol version 4</strong> </p>
-<p>概述：Ip地址标记网络里面的第四种版本</p>
-<p>格式：xxx.xxx.xxx.xxx 最大值是：255  最小值是：0</p>
-<p>总数应该是：256<em>256</em>256*256</p>
-<p>拓展：ip v1-v3-v5是实验版本</p>
+                <h4 id="查看操作系统的网卡信息"><a href="#查看操作系统的网卡信息" class="headerlink" title="查看操作系统的网卡信息"></a><strong>查看操作系统的网卡信息</strong></h4><h5 id="Ubuntu系统"><a href="#Ubuntu系统" class="headerlink" title="Ubuntu系统"></a><strong>Ubuntu系统</strong></h5><ul>
+<li><h6 id="安装查看工具："><a href="#安装查看工具：" class="headerlink" title="安装查看工具："></a>安装查看工具：</h6><pre class=" language-shell"><code class="language-shell">sudo apt-get install net-tools</code></pre>
 </li>
 </ul>
 <ul>
-<li><p><strong>Ipv6 全称 internet protocol version 6</strong></p>
-<p>​    概述：因为ipv4的IP段使用已饱和，所以诞生ipv6，且尚未普及</p>
-<p>​    格式：x:x:x:x:x:x:x:x，其中每个 x 是地址的 8 个 16 位部分的十六进制值。</p>
-<p>​    IPv6地址范围从 0000:0000:0000:0000:0000:0000:0000:0000 至 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff。</p>
-<p>​    总数：能产生2的128次方个IP地址，其资源几乎是无穷的</p>
+<li><h6 id="安装完毕后输入："><a href="#安装完毕后输入：" class="headerlink" title="安装完毕后输入："></a>安装完毕后输入：</h6><pre><code>ifconfig</code></pre></li>
+</ul>
+<ul>
+<li><h6 id="以太网："><a href="#以太网：" class="headerlink" title="以太网："></a>以太网：</h6><pre><code>ens_xxx</code></pre></li>
+</ul>
+<ul>
+<li><h6 id="本地网卡环回："><a href="#本地网卡环回：" class="headerlink" title="本地网卡环回："></a>本地网卡环回：</h6><pre><code>io</code></pre></li>
+</ul>
+<ul>
+<li><h6 id="关闭以太网网卡："><a href="#关闭以太网网卡：" class="headerlink" title="关闭以太网网卡："></a>关闭以太网网卡：</h6><pre class=" language-shell"><code class="language-shell">sudo ifconfig ensxx down</code></pre>
 </li>
 </ul>
-<p>​    </p>
-<p><strong>A类IP地址</strong></p>
-<blockquote>
-<p>192.168.0.1中 192.168.0代表网络地址，168.0.1代表主机地址</p>
-<p>其中主机地址0与255不能用，可以ip池为256<em>256</em>256=16777216种</p>
-</blockquote>
-<p><strong>B类IP地址</strong></p>
-<blockquote>
-<p>192.168.0.1中 192.168.0代表网络地址，0.1代表主机地址</p>
-<p>其中主机地址0与255不能用，可以ip池为256*256=65536种</p>
-</blockquote>
-<p><strong>C类IP地址</strong></p>
-<blockquote>
-<p>192.168.0.1中 192.168.0代表网络地址，1代表主机地址</p>
-<p>其中主机地址0与255不能用，可以ip池为254种</p>
-</blockquote>
-<p><strong>D类IP地址用于多点广播</strong></p>
-<blockquote>
-<p>D类IP地址第一个字节”1110”开始，它是一个专门保留的地址。</p>
-<p>它并不指向特定的网络地址，目前这一类地址被用在多点广播中</p>
-<p>多点广播地址用来一次寻址一组计算机s地址范围224.0.0.1-239.255.255.254</p>
-</blockquote>
-<p><strong>E类IP地址</strong></p>
-<blockquote>
-<p>以”1111”开始，为将来留作保留</p>
-<p>仅作为实验与开发使用</p>
-</blockquote>
-<p><strong>私有IP</strong></p>
-<blockquote>
-<p>在这么多网络IP中，国际规定中有一部分IP是用于我们的局域网使用，也就是属于私网IP，不在公网中使用，它们的范围是：</p>
-<p>10.0.0.0 ~ 10.255.255.255</p>
-<p>172.16.0.0 ~ 172.31.255.255</p>
-<p>192.168.0.0 ~ 192.168.255.255</p>
-</blockquote>
-<p><strong>注意事项</strong></p>
-<blockquote>
-<p>IP地址127·0·0·1 ~ 127·255·255·255用于回路测试。</p>
-<p>如：127·0·0·1 可以代表本机IP，用于<a href="http://127.0.0.1" target="_blank" rel="noopener">http://127.0.0.1</a> </p>
-<p>就可以测试本机中配置的Web服务器</p>
-</blockquote>
-<p><strong>总结</strong></p>
-<blockquote>
-<p>根据使用IP的主机数，来划分各类IP段</p>
-</blockquote>
+<ul>
+<li><h6 id="开启以太网网卡："><a href="#开启以太网网卡：" class="headerlink" title="开启以太网网卡："></a>开启以太网网卡：</h6><pre class=" language-shell"><code class="language-shell">sudo ifconfig ensxx up</code></pre>
+</li>
+</ul>
+<h5 id="Windows系统"><a href="#Windows系统" class="headerlink" title="Windows系统"></a><strong>Windows系统</strong></h5><ul>
+<li><h6 id="查看命令："><a href="#查看命令：" class="headerlink" title="查看命令："></a>查看命令：</h6><pre><code>ipconfig</code></pre></li>
+</ul>
 
             </div>
             <hr/>
@@ -490,7 +439,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/07/12/Python/network/UDP/ip_addr/">http://yoursite.com/2020/07/12/Python/network/UDP/ip_addr/</a>
+                    <a href="http://yoursite.com/2020/07/12/Python/network/UDP/linux-cmd/">http://yoursite.com/2020/07/12/Python/network/UDP/linux-cmd/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -528,8 +477,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Learn/">
-                                    <span class="chip bg-color">Learn</span>
+                                <a href="/tags/Basics/">
+                                    <span class="chip bg-color">Basics</span>
                                 </a>
                             
                         </div>
@@ -701,33 +650,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/07/12/Python/network/UDP/linux%20cmd/">
+                <a href="/2020/07/12/Python/network/UDP/network-basic/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="linux-cmd">
+                        <img src="/medias/featureimages/00.jpg" class="responsive-img" alt="网络基础">
                         
-                        <span class="card-title">linux-cmd</span>
+                        <span class="card-title">网络基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            查看操作系统的网卡信息Ubuntu系统
-安装查看工具：sudo apt-get install net-tools
+                            什么是网络
+通信方式进行传输数据，这就是网络的一种体现
+对讲机也是一种无线电电磁波传输信息，这就是网络。
+网络不仅仅是可视化网线
 
 
-
-安装完毕后输入：ifconfig
-
-
-以太网：ens_xxx
+简述：
 
 
-本地网卡环回：io
+网络就是一种辅助双方或者多方能够连接在一起的工具
+如果没有网络可想单机世界是多么的孤独
 
-
-关闭以太网网卡：sudo i
+使用
                         
                     </div>
                     <div class="publish-info">
@@ -738,8 +685,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/Network/" class="post-category">
+                                    Network
                                 </a>
                             
                             
@@ -749,8 +696,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Basics/">
-                        <span class="chip bg-color">Basics</span>
+                    <a href="/tags/UDP/">
+                        <span class="chip bg-color">UDP</span>
                     </a>
                     
                 </div>
@@ -764,40 +711,41 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/07/Python/interface/interface_test_basic/">
+                <a href="/2020/07/12/Python/network/UDP/ip-addr/">
                     <div class="card-image">
                         
-                        <img src="/medias/2.jpg" class="responsive-img" alt="interface_test_basic">
                         
-                        <span class="card-title">interface_test_basic</span>
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="IP地址">
+                        
+                        <span class="card-title">IP地址</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            为什么要做接口测试？
-在日常前后端开发中，他们之间为什么是独立完成的？
+                            IP地址什么是IP地址
+用来标记网络上的一台电脑
 
-接口的由来：连接前后端，以及移动端
+局域网ip地址可以相同，但会导致冲突（数据丢失）
 
-不同端的工作进度不一样，需要对最开始出来的接口，进行接口测试
+所以ip地址允许重复
 
 
+IP地址的作用 
 
-接口测试带来了哪些好处？
-比如调用第三方的接口，淘宝，银行，
+IP地址：用来在网络中标记一个终端，比如192.168.1.1; 在本地局域网内是唯一的。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/Network/" class="post-category">
+                                    Network
                                 </a>
                             
                             
@@ -807,8 +755,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/InterFace-Test/">
-                        <span class="chip bg-color">InterFace Test</span>
+                    <a href="/tags/Learn/">
+                        <span class="chip bg-color">Learn</span>
                     </a>
                     
                 </div>

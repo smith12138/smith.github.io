@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="linux-cmd, 清风明月">
+    <meta name="keywords" content="套接字, 清风明月">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>linux-cmd | 清风明月</title>
+    <title>套接字 | 清风明月</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,8 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="清风明月" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="清风明月" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -322,12 +322,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">linux-cmd</h1>
+                    <h1 class="description center-align post-title">套接字</h1>
                 </div>
             </div>
         </div>
@@ -349,8 +349,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Basics/">
-                                <span class="chip bg-color">Basics</span>
+                            <a href="/tags/Socket/">
+                                <span class="chip bg-color">Socket</span>
                             </a>
                         
                     </div>
@@ -361,8 +361,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux/" class="post-category">
-                                Linux
+                            <a href="/categories/UDP/" class="post-category">
+                                UDP
                             </a>
                         
                     </div>
@@ -390,29 +390,119 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="查看操作系统的网卡信息"><a href="#查看操作系统的网卡信息" class="headerlink" title="查看操作系统的网卡信息"></a><strong>查看操作系统的网卡信息</strong></h4><h5 id="Ubuntu系统"><a href="#Ubuntu系统" class="headerlink" title="Ubuntu系统"></a><strong>Ubuntu系统</strong></h5><ul>
-<li><h6 id="安装查看工具："><a href="#安装查看工具：" class="headerlink" title="安装查看工具："></a>安装查看工具：</h6><pre class=" language-shell"><code class="language-shell">sudo apt-get install net-tools</code></pre>
+                <h3 id="Socket简介"><a href="#Socket简介" class="headerlink" title="Socket简介"></a><strong>Socket简介</strong></h3><h3 id="不同电脑上的进程之间如何通信"><a href="#不同电脑上的进程之间如何通信" class="headerlink" title="不同电脑上的进程之间如何通信"></a><strong>不同电脑上的进程之间如何通信</strong></h3><blockquote>
+<p>首先解决的问题是如何唯一标识一个进程，否则通信无从谈起。</p>
+<p>在一台电脑上可以通过进程号(PID) 来唯一标识一个进程，但是在网络上这是行不通的。</p>
+<p>其实TCP/IP协议族已经帮我们解决了这个问题，网络层的“ip地址”可以标识唯一网络中的主机，而传输层的“协议+端口”可以唯一标识主机中的应用程序(进程)。</p>
+<p>这样利用ip地址 + 协议 + 端口 就可以标识网络的进程了，网络中的进程通信就可以利用这个标志与其他进程进行交互</p>
+</blockquote>
+<h6 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h6><blockquote>
+<ul>
+<li>“进程”：运行的程序以及运行时用到的资源这个整体称之为进程</li>
+<li>“进程间通信”：运行的程序之间的数据共享</li>
+</ul>
+</blockquote>
+<p><strong>什么是Socket</strong></p>
+<blockquote>
+<p>Socket(简称：套接字)是进程间通信的一种方式，它与其他进程间通信的一个主要不同是：</p>
+<p>它能实现不同主机间的进程通信，我们网络上各种各样的服务大多同时基于Socket来完成通信的，例如我们每天浏览网页，QQ聊天，收发Email等等。</p>
+</blockquote>
+<h3 id="创建Socket"><a href="#创建Socket" class="headerlink" title="创建Socket"></a><strong>创建Socket</strong></h3><ul>
+<li><p>在Python中使用socket模块中的socket方法就可以完成</p>
+<pre class=" language-python"><code class="language-python">socket<span class="token punctuation">.</span>socket<span class="token punctuation">(</span>Family<span class="token punctuation">,</span> Type<span class="token punctuation">)</span> </code></pre>
 </li>
 </ul>
-<ul>
-<li><h6 id="安装完毕后输入："><a href="#安装完毕后输入：" class="headerlink" title="安装完毕后输入："></a>安装完毕后输入：</h6><pre><code>ifconfig</code></pre></li>
+<h6 id="简述"><a href="#简述" class="headerlink" title="简述:"></a>简述:</h6><ul>
+<li>socket类创建的对象，该对象带有两个默认参数:</li>
 </ul>
+<blockquote>
 <ul>
-<li><h6 id="以太网："><a href="#以太网：" class="headerlink" title="以太网："></a>以太网：</h6><pre><code>ens_xxx</code></pre></li>
-</ul>
-<ul>
-<li><h6 id="本地网卡环回："><a href="#本地网卡环回：" class="headerlink" title="本地网卡环回："></a>本地网卡环回：</h6><pre><code>io</code></pre></li>
-</ul>
-<ul>
-<li><h6 id="关闭以太网网卡："><a href="#关闭以太网网卡：" class="headerlink" title="关闭以太网网卡："></a>关闭以太网网卡：</h6><pre class=" language-shell"><code class="language-shell">sudo ifconfig ensxx down</code></pre>
+<li><p>family:</p>
+<p>可以选择AF_INET(用于internet进程间通信) 或者AF_UNIX(用于 同一台机器进程间通信)， 实际工作中常用AF_INET</p>
+</li>
+<li><p>type:</p>
+</li>
+<li><p>套接字类型，可以是SOCKET_ STREAM(流式套接字， 主要用于TCP协议)或者SOCK_ DGRAM(数据报套接字，主要用于UDP协议)</p>
 </li>
 </ul>
-<ul>
-<li><h6 id="开启以太网网卡："><a href="#开启以太网网卡：" class="headerlink" title="开启以太网网卡："></a>开启以太网网卡：</h6><pre class=" language-shell"><code class="language-shell">sudo ifconfig ensxx up</code></pre>
+</blockquote>
+<p><img src="https://i.loli.net/2020/05/14/oj1zVkDhN8vpnOm.jpg" alt=""> </p>
+<h3 id="发送UDP数据"><a href="#发送UDP数据" class="headerlink" title="发送UDP数据"></a>发送UDP数据</h3><p><img src="https://i.loli.net/2020/05/14/hbO8WdYC6isVypr.jpg" alt=""> </p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> socket
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+  <span class="token comment" spellcheck="true"># 创建一个udp的套接字</span>
+
+  udp_socket <span class="token operator">=</span> socket<span class="token punctuation">.</span>socket<span class="token punctuation">(</span>socket<span class="token punctuation">.</span>AF_INET<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>SOCK_DGRAM<span class="token punctuation">)</span>
+
+  <span class="token comment" spellcheck="true"># 循环发送，并支持exit指令退出程序</span>
+
+  <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span></code></pre>
+<pre><code>  ##### 接收键盘输入信息</code></pre><pre class=" language-python"><code class="language-python">      content <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入内容： '</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> content <span class="token operator">==</span> <span class="token string">'exit'</span><span class="token punctuation">:</span>
+
+        <span class="token keyword">break</span>
+
+     <span class="token comment" spellcheck="true"># udp_socket.sendto(数据, 目的IP与Port)</span>
+
+    udp_socket<span class="token punctuation">.</span>sendto<span class="token punctuation">(</span>content<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'10.0.0.1'</span><span class="token punctuation">,</span> <span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+      <span class="token comment" spellcheck="true"># 关闭套接字</span>
+
+      udp_socket<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+
+  main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre>
+<h3 id="接受UDP数据"><a href="#接受UDP数据" class="headerlink" title="接受UDP数据"></a><strong>接受UDP数据</strong></h3><p><code>如果程序要接收数据，必须固定端口</code></p>
+<h6 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h6><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> socket <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token comment" spellcheck="true"># 1. 创建udp套接字</span>
+  udp_socket <span class="token operator">=</span> socket<span class="token punctuation">(</span>AF_INET<span class="token punctuation">,</span> SOCK_DGRAM<span class="token punctuation">)</span>
+
+  <span class="token comment" spellcheck="true"># 2. 添加本地信息</span>
+  local_address <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token number">7878</span><span class="token punctuation">)</span> 必须是本机的ip port
+  udp_socket<span class="token punctuation">.</span>bind<span class="token punctuation">(</span>local_address<span class="token punctuation">)</span>
+
+  <span class="token comment" spellcheck="true"># 3. 接收数据</span>
+  receive_data <span class="token operator">=</span> udp_socket<span class="token punctuation">.</span>recvfrom<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span>    数据bytes大小
+  接收的数据是一个tuple类型，包含发送方的数据，ip，port<span class="token punctuation">(</span>b’data’<span class="token punctuation">,</span> <span class="token punctuation">(</span>‘<span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">0.0</span>’ <span class="token punctuation">,</span>  port<span class="token punctuation">)</span><span class="token punctuation">)</span> 
+    receive_msg <span class="token operator">=</span> receive_data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'gbk'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 存储接收的信息</span>
+    send_address <span class="token operator">=</span> receive_data<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 存储发送方的地址</span>
+
+    <span class="token comment" spellcheck="true"># 4. 打印数据</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'%s:%s'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>str<span class="token punctuation">(</span>send_address<span class="token punctuation">)</span><span class="token punctuation">,</span> receive_msg<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+  <span class="token comment" spellcheck="true"># 5. 关闭套接字</span>
+  udp_socket<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+  main<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<h3 id="绑定端口"><a href="#绑定端口" class="headerlink" title="绑定端口"></a><strong>绑定端口</strong></h3><blockquote>
+<p>当网络程序开始运行，进行收发数据，未进行固定端口，系统则随机分配一个端口，结束进程则释放该端口。</p>
+<p>一般接收方需事先绑定端口</p>
+</blockquote>
+<h6 id="注意：UDP中端口不能被占用"><a href="#注意：UDP中端口不能被占用" class="headerlink" title="注意：UDP中端口不能被占用"></a>注意：UDP中端口不能被占用</h6><h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a><strong>常见问题</strong></h3><h6 id="recvfrom-在数据没有到来是会怎样？"><a href="#recvfrom-在数据没有到来是会怎样？" class="headerlink" title="recvfrom 在数据没有到来是会怎样？"></a>recvfrom 在数据没有到来是会怎样？</h6><ul>
+<li><p>调用recvfrom之后，数据未到</p>
+<p><code>它会处于堵塞状态</code></p>
+</li>
+<li><p>没有调用recvfrom之前，数据已到</p>
+<p><code>数据首先进入操作系统缓存区，再调用recvfrom找到数据</code></p>
+<p><strong>注意</strong>：易导致操作系统内存占满</p>
 </li>
 </ul>
-<h5 id="Windows系统"><a href="#Windows系统" class="headerlink" title="Windows系统"></a><strong>Windows系统</strong></h5><ul>
-<li><h6 id="查看命令："><a href="#查看命令：" class="headerlink" title="查看命令："></a>查看命令：</h6><pre><code>ipconfig</code></pre></li>
+<h6 id="socket是-全双工？"><a href="#socket是-全双工？" class="headerlink" title="socket是 全双工？"></a>socket是 全双工？</h6><p>​    <code>套接字是一个，可以同时 收发数据的</code></p>
+<h6 id="飞秋通信用的是2425端口，那么qq呢？qq怎样通信？"><a href="#飞秋通信用的是2425端口，那么qq呢？qq怎样通信？" class="headerlink" title="飞秋通信用的是2425端口，那么qq呢？qq怎样通信？"></a>飞秋通信用的是2425端口，那么qq呢？qq怎样通信？</h6><h6 id="扩展知识"><a href="#扩展知识" class="headerlink" title="扩展知识"></a><strong>扩展知识</strong></h6><ul>
+<li><p>单工：收音机此类，无法发送数据，只能接收数据</p>
+</li>
+<li><p>半双工：对讲机，可以收发数据，但不能同时收发</p>
+</li>
+<li><p>全双工：可以同时收发数据</p>
+</li>
 </ul>
 
             </div>
@@ -439,7 +529,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/07/12/Python/network/UDP/linux%20cmd/">http://yoursite.com/2020/07/12/Python/network/UDP/linux%20cmd/</a>
+                    <a href="http://yoursite.com/2020/07/12/Python/network/UDP/socket/">http://yoursite.com/2020/07/12/Python/network/UDP/socket/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -477,8 +567,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Basics/">
-                                    <span class="chip bg-color">Basics</span>
+                                <a href="/tags/Socket/">
+                                    <span class="chip bg-color">Socket</span>
                                 </a>
                             
                         </div>
@@ -650,31 +740,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/07/12/Python/network/UDP/network%20basic/">
+                <a href="/2020/07/12/Python/basic/extend/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="network basic">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Python扩展知识">
                         
-                        <span class="card-title">network basic</span>
+                        <span class="card-title">Python扩展知识</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            什么是网络
-通信方式进行传输数据，这就是网络的一种体现
-对讲机也是一种无线电电磁波传输信息，这就是网络。
-网络不仅仅是可视化网线
+                            导语产品是需要打磨出来的，重点在于打磨二字，没有什么产品可以一就而成
+字典替代switch
+Switch语句同样为条件分支语句
+其他语言中Switch语句的作用，C#
+字典映射替代switch语句
+示例：def get_Sunday():
 
-
-简述：
-
-
-网络就是一种辅助双方或者多方能够连接在一起的工具
-如果没有网络可想单机世界是多么的孤独
-
-使用
                         
                     </div>
                     <div class="publish-info">
@@ -685,8 +769,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Network/" class="post-category">
-                                    Network
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
                                 </a>
                             
                             
@@ -696,8 +780,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/UDP/">
-                        <span class="chip bg-color">UDP</span>
+                    <a href="/tags/Learn/">
+                        <span class="chip bg-color">Learn</span>
                     </a>
                     
                 </div>
@@ -711,29 +795,25 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/12/Python/network/UDP/ip_addr/">
+                <a href="/2020/07/12/Python/network/UDP/port/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="ip_addr">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="端口">
                         
-                        <span class="card-title">ip_addr</span>
+                        <span class="card-title">端口</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            IP地址什么是IP地址
-用来标记网络上的一台电脑
-
-局域网ip地址可以相同，但会导致冲突（数据丢失）
-
-所以ip地址允许重复
-
-
-IP地址的作用 
-
-IP地址：用来在网络中标记一个终端，比如192.168.1.1; 在本地局域网内是唯一的。
+                            什么是端口 
+网络通信必备IP ，端口
+端口就好比是一个房子的门，是出入这间房子的必经之路。
+ 
+扩展知识：一个程序没有运行之间称之为“程序”，程序运行起来之后称为“进程”
+如果一个程序需要收发网络数据，那么就需要有这样的端口
+在linux
                         
                     </div>
                     <div class="publish-info">
@@ -744,8 +824,8 @@ IP地址：用来在网络中标记一个终端，比如192.168.1.1; 在本地�
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Network/" class="post-category">
-                                    Network
+                            <a href="/categories/UDP/" class="post-category">
+                                    UDP
                                 </a>
                             
                             
@@ -755,8 +835,8 @@ IP地址：用来在网络中标记一个终端，比如192.168.1.1; 在本地�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Learn/">
-                        <span class="chip bg-color">Learn</span>
+                    <a href="/tags/Port/">
+                        <span class="chip bg-color">Port</span>
                     </a>
                     
                 </div>

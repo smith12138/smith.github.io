@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>re</title>
+      <title>Python正则表达式</title>
       <link href="/2020/07/12/Python/basic/re/"/>
       <url>/2020/07/12/Python/basic/re/</url>
       
@@ -29,7 +29,7 @@
     
     
     <entry>
-      <title>json-xml</title>
+      <title>JSON与XML区别</title>
       <link href="/2020/07/12/Python/basic/json-xml/"/>
       <url>/2020/07/12/Python/basic/json-xml/</url>
       
@@ -54,7 +54,7 @@
     
     
     <entry>
-      <title>extend</title>
+      <title>Python扩展知识</title>
       <link href="/2020/07/12/Python/basic/extend/"/>
       <url>/2020/07/12/Python/basic/extend/</url>
       
@@ -79,9 +79,9 @@
     
     
     <entry>
-      <title>socket basic</title>
-      <link href="/2020/07/12/Python/network/UDP/socket%20basic/"/>
-      <url>/2020/07/12/Python/network/UDP/socket%20basic/</url>
+      <title>套接字</title>
+      <link href="/2020/07/12/Python/network/UDP/socket/"/>
+      <url>/2020/07/12/Python/network/UDP/socket/</url>
       
         <content type="html"><![CDATA[<h3 id="Socket简介"><a href="#Socket简介" class="headerlink" title="Socket简介"></a><strong>Socket简介</strong></h3><h3 id="不同电脑上的进程之间如何通信"><a href="#不同电脑上的进程之间如何通信" class="headerlink" title="不同电脑上的进程之间如何通信"></a><strong>不同电脑上的进程之间如何通信</strong></h3><blockquote><p>首先解决的问题是如何唯一标识一个进程，否则通信无从谈起。</p><p>在一台电脑上可以通过进程号(PID) 来唯一标识一个进程，但是在网络上这是行不通的。</p><p>其实TCP/IP协议族已经帮我们解决了这个问题，网络层的“ip地址”可以标识唯一网络中的主机，而传输层的“协议+端口”可以唯一标识主机中的应用程序(进程)。</p><p>这样利用ip地址 + 协议 + 端口 就可以标识网络的进程了，网络中的进程通信就可以利用这个标志与其他进程进行交互</p></blockquote><h6 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h6><blockquote><ul><li>“进程”：运行的程序以及运行时用到的资源这个整体称之为进程</li><li>“进程间通信”：运行的程序之间的数据共享</li></ul></blockquote><p><strong>什么是Socket</strong></p><blockquote><p>Socket(简称：套接字)是进程间通信的一种方式，它与其他进程间通信的一个主要不同是：</p><p>它能实现不同主机间的进程通信，我们网络上各种各样的服务大多同时基于Socket来完成通信的，例如我们每天浏览网页，QQ聊天，收发Email等等。</p></blockquote><h3 id="创建Socket"><a href="#创建Socket" class="headerlink" title="创建Socket"></a><strong>创建Socket</strong></h3><ul><li><p>在Python中使用socket模块中的socket方法就可以完成</p><pre class=" language-python"><code class="language-python">socket<span class="token punctuation">.</span>socket<span class="token punctuation">(</span>Family<span class="token punctuation">,</span> Type<span class="token punctuation">)</span> </code></pre></li></ul><h6 id="简述"><a href="#简述" class="headerlink" title="简述:"></a>简述:</h6><ul><li>socket类创建的对象，该对象带有两个默认参数:</li></ul><blockquote><ul><li><p>family:</p><p>可以选择AF_INET(用于internet进程间通信) 或者AF_UNIX(用于 同一台机器进程间通信)， 实际工作中常用AF_INET</p></li><li><p>type:</p></li><li><p>套接字类型，可以是SOCKET_ STREAM(流式套接字， 主要用于TCP协议)或者SOCK_ DGRAM(数据报套接字，主要用于UDP协议)</p></li></ul></blockquote><p><img src="https://i.loli.net/2020/05/14/oj1zVkDhN8vpnOm.jpg" alt=""> </p><h3 id="发送UDP数据"><a href="#发送UDP数据" class="headerlink" title="发送UDP数据"></a>发送UDP数据</h3><p><img src="https://i.loli.net/2020/05/14/hbO8WdYC6isVypr.jpg" alt=""> </p><pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> socket<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 创建一个udp的套接字</span>  udp_socket <span class="token operator">=</span> socket<span class="token punctuation">.</span>socket<span class="token punctuation">(</span>socket<span class="token punctuation">.</span>AF_INET<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>SOCK_DGRAM<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 循环发送，并支持exit指令退出程序</span>  <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span></code></pre><pre><code>  ##### 接收键盘输入信息</code></pre><pre class=" language-python"><code class="language-python">      content <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入内容： '</span><span class="token punctuation">)</span>    <span class="token keyword">if</span> content <span class="token operator">==</span> <span class="token string">'exit'</span><span class="token punctuation">:</span>        <span class="token keyword">break</span>     <span class="token comment" spellcheck="true"># udp_socket.sendto(数据, 目的IP与Port)</span>    udp_socket<span class="token punctuation">.</span>sendto<span class="token punctuation">(</span>content<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'10.0.0.1'</span><span class="token punctuation">,</span> <span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true"># 关闭套接字</span>      udp_socket<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>  main<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><h3 id="接受UDP数据"><a href="#接受UDP数据" class="headerlink" title="接受UDP数据"></a><strong>接受UDP数据</strong></h3><p><code>如果程序要接收数据，必须固定端口</code></p><h6 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h6><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> socket <span class="token keyword">import</span> <span class="token operator">*</span><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 1. 创建udp套接字</span>  udp_socket <span class="token operator">=</span> socket<span class="token punctuation">(</span>AF_INET<span class="token punctuation">,</span> SOCK_DGRAM<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 2. 添加本地信息</span>  local_address <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token number">7878</span><span class="token punctuation">)</span> 必须是本机的ip port  udp_socket<span class="token punctuation">.</span>bind<span class="token punctuation">(</span>local_address<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 3. 接收数据</span>  receive_data <span class="token operator">=</span> udp_socket<span class="token punctuation">.</span>recvfrom<span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span>    数据bytes大小  接收的数据是一个tuple类型，包含发送方的数据，ip，port<span class="token punctuation">(</span>b’data’<span class="token punctuation">,</span> <span class="token punctuation">(</span>‘<span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">0.0</span>’ <span class="token punctuation">,</span>  port<span class="token punctuation">)</span><span class="token punctuation">)</span>     receive_msg <span class="token operator">=</span> receive_data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'gbk'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 存储接收的信息</span>    send_address <span class="token operator">=</span> receive_data<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 存储发送方的地址</span>    <span class="token comment" spellcheck="true"># 4. 打印数据</span>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'%s:%s'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>str<span class="token punctuation">(</span>send_address<span class="token punctuation">)</span><span class="token punctuation">,</span> receive_msg<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 5. 关闭套接字</span>  udp_socket<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>  main<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><h3 id="绑定端口"><a href="#绑定端口" class="headerlink" title="绑定端口"></a><strong>绑定端口</strong></h3><blockquote><p>当网络程序开始运行，进行收发数据，未进行固定端口，系统则随机分配一个端口，结束进程则释放该端口。</p><p>一般接收方需事先绑定端口</p></blockquote><h6 id="注意：UDP中端口不能被占用"><a href="#注意：UDP中端口不能被占用" class="headerlink" title="注意：UDP中端口不能被占用"></a>注意：UDP中端口不能被占用</h6><h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a><strong>常见问题</strong></h3><h6 id="recvfrom-在数据没有到来是会怎样？"><a href="#recvfrom-在数据没有到来是会怎样？" class="headerlink" title="recvfrom 在数据没有到来是会怎样？"></a>recvfrom 在数据没有到来是会怎样？</h6><ul><li><p>调用recvfrom之后，数据未到</p><p><code>它会处于堵塞状态</code></p></li><li><p>没有调用recvfrom之前，数据已到</p><p><code>数据首先进入操作系统缓存区，再调用recvfrom找到数据</code></p><p><strong>注意</strong>：易导致操作系统内存占满</p></li></ul><h6 id="socket是-全双工？"><a href="#socket是-全双工？" class="headerlink" title="socket是 全双工？"></a>socket是 全双工？</h6><p>​    <code>套接字是一个，可以同时 收发数据的</code></p><h6 id="飞秋通信用的是2425端口，那么qq呢？qq怎样通信？"><a href="#飞秋通信用的是2425端口，那么qq呢？qq怎样通信？" class="headerlink" title="飞秋通信用的是2425端口，那么qq呢？qq怎样通信？"></a>飞秋通信用的是2425端口，那么qq呢？qq怎样通信？</h6><h6 id="扩展知识"><a href="#扩展知识" class="headerlink" title="扩展知识"></a><strong>扩展知识</strong></h6><ul><li><p>单工：收音机此类，无法发送数据，只能接收数据</p></li><li><p>半双工：对讲机，可以收发数据，但不能同时收发</p></li><li><p>全双工：可以同时收发数据</p></li></ul>]]></content>
       
@@ -104,7 +104,7 @@
     
     
     <entry>
-      <title>port</title>
+      <title>端口</title>
       <link href="/2020/07/12/Python/network/UDP/port/"/>
       <url>/2020/07/12/Python/network/UDP/port/</url>
       
@@ -129,9 +129,9 @@
     
     
     <entry>
-      <title>network basic</title>
-      <link href="/2020/07/12/Python/network/UDP/network%20basic/"/>
-      <url>/2020/07/12/Python/network/UDP/network%20basic/</url>
+      <title>网络基础</title>
+      <link href="/2020/07/12/Python/network/UDP/network-basic/"/>
+      <url>/2020/07/12/Python/network/UDP/network-basic/</url>
       
         <content type="html"><![CDATA[<h4 id="什么是网络"><a href="#什么是网络" class="headerlink" title="什么是网络"></a><strong>什么是网络</strong></h4><blockquote><p>通信方式进行传输数据，这就是网络的一种体现</p><p>对讲机也是一种无线电电磁波传输信息，这就是网络。</p><p>网络不仅仅是可视化网线</p></blockquote><ul><li><h5 id="简述："><a href="#简述：" class="headerlink" title="简述："></a>简述：</h5></li></ul><blockquote><p>网络就是一种辅助双方或者多方能够连接在一起的工具</p><p>如果没有网络可想单机世界是多么的孤独</p></blockquote><h4 id="使用网络的目的"><a href="#使用网络的目的" class="headerlink" title="使用网络的目的"></a><strong>使用网络的目的</strong></h4><ul><li><p>为了联通多方然后进行通信的，即把数据从一方传递给另一方</p></li><li><p>为了让在不同的电脑上运行的软件，之间能够互相传递数据，就需要网络</p></li></ul><h5 id="小总结："><a href="#小总结：" class="headerlink" title="小总结："></a>小总结：</h5><ul><li><p>使用网络能够把多方连接在一起，然后可以进行数据传递</p></li><li><p>所谓的网络编程就是，让在不同的电脑上运行的程序进行数据传递，即进程之间的通信</p></li></ul><p><img src="https://i.loli.net/2020/05/14/w9U54MRgLthZIPB.jpg" alt="网络传输略图"> </p><ul><li><p>同一公司，班级传输数据是一个局域网</p></li><li><p>不同城市，国家专属数据是万维网，互联网</p></li><li><p>不管是蓝牙，WIFI，网线都是网络功能</p></li></ul>]]></content>
       
@@ -154,9 +154,9 @@
     
     
     <entry>
-      <title>linux-cmd</title>
-      <link href="/2020/07/12/Python/network/UDP/linux%20cmd/"/>
-      <url>/2020/07/12/Python/network/UDP/linux%20cmd/</url>
+      <title>Linux命令</title>
+      <link href="/2020/07/12/Python/network/UDP/linux-cmd/"/>
+      <url>/2020/07/12/Python/network/UDP/linux-cmd/</url>
       
         <content type="html"><![CDATA[<h4 id="查看操作系统的网卡信息"><a href="#查看操作系统的网卡信息" class="headerlink" title="查看操作系统的网卡信息"></a><strong>查看操作系统的网卡信息</strong></h4><h5 id="Ubuntu系统"><a href="#Ubuntu系统" class="headerlink" title="Ubuntu系统"></a><strong>Ubuntu系统</strong></h5><ul><li><h6 id="安装查看工具："><a href="#安装查看工具：" class="headerlink" title="安装查看工具："></a>安装查看工具：</h6><pre class=" language-shell"><code class="language-shell">sudo apt-get install net-tools</code></pre></li></ul><ul><li><h6 id="安装完毕后输入："><a href="#安装完毕后输入：" class="headerlink" title="安装完毕后输入："></a>安装完毕后输入：</h6><pre><code>ifconfig</code></pre></li></ul><ul><li><h6 id="以太网："><a href="#以太网：" class="headerlink" title="以太网："></a>以太网：</h6><pre><code>ens_xxx</code></pre></li></ul><ul><li><h6 id="本地网卡环回："><a href="#本地网卡环回：" class="headerlink" title="本地网卡环回："></a>本地网卡环回：</h6><pre><code>io</code></pre></li></ul><ul><li><h6 id="关闭以太网网卡："><a href="#关闭以太网网卡：" class="headerlink" title="关闭以太网网卡："></a>关闭以太网网卡：</h6><pre class=" language-shell"><code class="language-shell">sudo ifconfig ensxx down</code></pre></li></ul><ul><li><h6 id="开启以太网网卡："><a href="#开启以太网网卡：" class="headerlink" title="开启以太网网卡："></a>开启以太网网卡：</h6><pre class=" language-shell"><code class="language-shell">sudo ifconfig ensxx up</code></pre></li></ul><h5 id="Windows系统"><a href="#Windows系统" class="headerlink" title="Windows系统"></a><strong>Windows系统</strong></h5><ul><li><h6 id="查看命令："><a href="#查看命令：" class="headerlink" title="查看命令："></a>查看命令：</h6><pre><code>ipconfig</code></pre></li></ul>]]></content>
       
@@ -179,9 +179,9 @@
     
     
     <entry>
-      <title>ip_addr</title>
-      <link href="/2020/07/12/Python/network/UDP/ip_addr/"/>
-      <url>/2020/07/12/Python/network/UDP/ip_addr/</url>
+      <title>IP地址</title>
+      <link href="/2020/07/12/Python/network/UDP/ip-addr/"/>
+      <url>/2020/07/12/Python/network/UDP/ip-addr/</url>
       
         <content type="html"><![CDATA[<h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a><strong>IP地址</strong></h3><h5 id="什么是IP地址"><a href="#什么是IP地址" class="headerlink" title="什么是IP地址"></a><strong>什么是IP地址</strong></h5><ul><li><p>用来标记网络上的一台电脑</p></li><li><p>局域网ip地址可以相同，但会导致冲突（数据丢失）</p></li><li><p>所以ip地址允许重复</p></li></ul><h5 id="IP地址的作用"><a href="#IP地址的作用" class="headerlink" title="IP地址的作用"></a><strong>IP地址的作用</strong></h5><p><img src="https://i.loli.net/2020/05/14/1CkuZVbasIdU6fS.jpg" alt="拓扑图"> </p><ul><li>IP地址：用来在网络中标记一个终端，比如192.168.1.1; 在本地局域网内是唯一的。</li></ul><p><strong>IP地址的分类（了解）</strong></p><p>每一个IP地址包括两部分：<strong>网络地址与主机地址</strong></p><p><img src="https://i.loli.net/2020/05/14/LoZUA2qjb831dJD.jpg" alt="IP分类示意图"> </p><ul><li><p><strong>pv4 全称 internet protocol version 4</strong> </p><p>概述：Ip地址标记网络里面的第四种版本</p><p>格式：xxx.xxx.xxx.xxx 最大值是：255  最小值是：0</p><p>总数应该是：256<em>256</em>256*256</p><p>拓展：ip v1-v3-v5是实验版本</p></li></ul><ul><li><p><strong>Ipv6 全称 internet protocol version 6</strong></p><p>​    概述：因为ipv4的IP段使用已饱和，所以诞生ipv6，且尚未普及</p><p>​    格式：x:x:x:x:x:x:x:x，其中每个 x 是地址的 8 个 16 位部分的十六进制值。</p><p>​    IPv6地址范围从 0000:0000:0000:0000:0000:0000:0000:0000 至 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff。</p><p>​    总数：能产生2的128次方个IP地址，其资源几乎是无穷的</p></li></ul><p>​    </p><p><strong>A类IP地址</strong></p><blockquote><p>192.168.0.1中 192.168.0代表网络地址，168.0.1代表主机地址</p><p>其中主机地址0与255不能用，可以ip池为256<em>256</em>256=16777216种</p></blockquote><p><strong>B类IP地址</strong></p><blockquote><p>192.168.0.1中 192.168.0代表网络地址，0.1代表主机地址</p><p>其中主机地址0与255不能用，可以ip池为256*256=65536种</p></blockquote><p><strong>C类IP地址</strong></p><blockquote><p>192.168.0.1中 192.168.0代表网络地址，1代表主机地址</p><p>其中主机地址0与255不能用，可以ip池为254种</p></blockquote><p><strong>D类IP地址用于多点广播</strong></p><blockquote><p>D类IP地址第一个字节”1110”开始，它是一个专门保留的地址。</p><p>它并不指向特定的网络地址，目前这一类地址被用在多点广播中</p><p>多点广播地址用来一次寻址一组计算机s地址范围224.0.0.1-239.255.255.254</p></blockquote><p><strong>E类IP地址</strong></p><blockquote><p>以”1111”开始，为将来留作保留</p><p>仅作为实验与开发使用</p></blockquote><p><strong>私有IP</strong></p><blockquote><p>在这么多网络IP中，国际规定中有一部分IP是用于我们的局域网使用，也就是属于私网IP，不在公网中使用，它们的范围是：</p><p>10.0.0.0 ~ 10.255.255.255</p><p>172.16.0.0 ~ 172.31.255.255</p><p>192.168.0.0 ~ 192.168.255.255</p></blockquote><p><strong>注意事项</strong></p><blockquote><p>IP地址127·0·0·1 ~ 127·255·255·255用于回路测试。</p><p>如：127·0·0·1 可以代表本机IP，用于<a href="http://127.0.0.1" target="_blank" rel="noopener">http://127.0.0.1</a> </p><p>就可以测试本机中配置的Web服务器</p></blockquote><p><strong>总结</strong></p><blockquote><p>根据使用IP的主机数，来划分各类IP段</p></blockquote>]]></content>
       
@@ -204,7 +204,7 @@
     
     
     <entry>
-      <title>interface_test_basic</title>
+      <title>接口自动化测试</title>
       <link href="/2020/07/07/Python/interface/interface_test_basic/"/>
       <url>/2020/07/07/Python/interface/interface_test_basic/</url>
       
@@ -229,7 +229,7 @@
     
     
     <entry>
-      <title>interface_automation</title>
+      <title>接口自动化介绍</title>
       <link href="/2020/07/07/Python/interface/interface_automation/"/>
       <url>/2020/07/07/Python/interface/interface_automation/</url>
       
@@ -254,7 +254,7 @@
     
     
     <entry>
-      <title>basic</title>
+      <title>Git基础</title>
       <link href="/2020/06/30/Git/basic/"/>
       <url>/2020/06/30/Git/basic/</url>
       
@@ -281,7 +281,7 @@
     
     
     <entry>
-      <title>basic</title>
+      <title>MySQL基础</title>
       <link href="/2020/06/28/MySQL/basic/"/>
       <url>/2020/06/28/MySQL/basic/</url>
       
