@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>个人简历</title>
+      <link href="/2020/08/08/Python/basic/my%20data/"/>
+      <url>/2020/08/08/Python/basic/my%20data/</url>
+      
+        <content type="html"><![CDATA[<ul><li><h3 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h3><p>熟练 Fiddler，Postman，Wireshrak 抓包/请求数据分析，perfdog 性能监测工具。</p><p>熟练 Python 运用 Scrapy 框架，进行分布式爬虫，运用 selenium 验证码识别，文字识别，进行模拟登录。</p><p>熟悉使用 unittest，requests，xlwings, 进行接口测试。</p><p>熟悉使用 linux 常用命令，MySQL 增删改查，了解 redis。</p><p>熟练使用 xmind，draw等流程图设计工具。</p><p>热爱游戏，善于专研</p><hr><h3 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h3><p><strong>彩途网络科技有限公司</strong>                                <strong>测试工程师</strong>                            <strong>2019.03 - 至今</strong></p><h5 id="工作描述："><a href="#工作描述：" class="headerlink" title="工作描述："></a>工作描述：</h5><ul><li>前端功能测试</li></ul><blockquote><p>测试用例设计，流程图分析，需求分析，以竞品为参考，提出相对合理的需求建议</p></blockquote><ul><li>后台服务端功能，接口测试</li></ul><hr><h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><p><strong>Winclub项目接口测试</strong>（Google Play可查）                            <strong>独立负责</strong>                                2020.03-2020.06</p><h5 id="项目描述："><a href="#项目描述：" class="headerlink" title="项目描述："></a>项目描述：</h5><ul><li>为了确保后端接口正常，需要对后端提供的接口进行测试。</li></ul><h5 id="项目职责："><a href="#项目职责：" class="headerlink" title="项目职责："></a>项目职责：</h5><ul><li>根据接口文档编写测试用例，提供自测用例，开发自测通过后进行测试。</li><li>结合 requests，unittest，xlwings，smtplib 搭建自动化测试框架</li><li>根据设计接口进行测试，生成测试报告，完成测试报告 Email 通知</li></ul></li></ul><p>  <strong>丫丫项目性能测试</strong>（Google Play可查）                                 <strong>独立负责</strong>                                2019.10-2019.11</p><h5 id="项目描述：-1"><a href="#项目描述：-1" class="headerlink" title="项目描述："></a>项目描述：</h5><ul><li><p>由于捕鱼模块，在中低端机型中帧率表现不尽如人意，需要锁定那个方面引起帧率过低</p><h5 id="项目职责：-1"><a href="#项目职责：-1" class="headerlink" title="项目职责："></a>项目职责：</h5></li><li><p>沟通后确定性能测试指标，制定测试方案，设计用例</p></li><li><p>启动 perfdog 监测工具，android studio SDK tools monitor  程序日志查看工具，以备锁定具体影响方面</p></li><li><p>根据多个环境的不同 perfdog 测试结果分析，并将结果同步给开发进行调优</p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python正则表达式</title>
       <link href="/2020/07/12/Python/basic/re/"/>
       <url>/2020/07/12/Python/basic/re/</url>

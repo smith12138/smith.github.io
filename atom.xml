@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-12T08:30:45.419Z</updated>
+  <updated>2020-08-08T05:04:03.428Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人简历</title>
+    <link href="http://yoursite.com/2020/08/08/Python/basic/my%20data/"/>
+    <id>http://yoursite.com/2020/08/08/Python/basic/my%20data/</id>
+    <published>2020-08-08T07:19:14.000Z</published>
+    <updated>2020-08-08T05:04:03.428Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;自我评价&quot;&gt;&lt;a href=&quot;#自我评价&quot; class=&quot;headerlink&quot; title=&quot;自我评价&quot;&gt;&lt;/a&gt;自我评价&lt;/h3&gt;&lt;p&gt;熟练 Fiddler，Postman，Wireshrak 抓包/请求数据分析，perfdog
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Python正则表达式</title>
