@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-08T05:17:57.224Z</updated>
+  <updated>2020-08-09T11:30:30.244Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,385 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>验证码识别方法</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/</id>
+    <published>2020-08-09T11:59:00.000Z</published>
+    <updated>2020-08-09T11:30:30.244Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h5 id=&quot;编码实现（-tesseract-ocr-）&quot;&gt;&lt;a href=&quot;#编码实现（-tesseract-ocr-）&quot; class=&quot;headerlink&quot; title=&quot;编码实现（ tesseract-ocr ）&quot;&gt;&lt;/a&gt;编码实现（ tesseract-ocr
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>解决倒立文字验证</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/%E8%AF%86%E5%88%AB%E5%80%92%E7%AB%8B%E6%96%87%E5%AD%97/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/%E8%AF%86%E5%88%AB%E5%80%92%E7%AB%8B%E6%96%87%E5%AD%97/</id>
+    <published>2020-08-09T10:58:00.000Z</published>
+    <updated>2020-08-09T11:23:56.428Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;引用第三方库，调用接口进行识别&quot;&gt;&lt;a href=&quot;#引用第三方库，调用接口进行识别&quot; class=&quot;headerlink&quot; title=&quot;引用第三方库，调用接口进行识别&quot;&gt;&lt;/a&gt;引用第三方库，调用接口进行识别&lt;/h4&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+      <category term="Selenium" scheme="http://yoursite.com/tags/Selenium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模拟 Chrome 知乎登录</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/Selenium_Chrome%E6%A8%A1%E6%8B%9F%E7%9F%A5%E4%B9%8E%E7%99%BB%E5%BD%95/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/Selenium_Chrome%E6%A8%A1%E6%8B%9F%E7%9F%A5%E4%B9%8E%E7%99%BB%E5%BD%95/</id>
+    <published>2020-08-09T10:52:00.000Z</published>
+    <updated>2020-08-09T11:45:17.107Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;创建-chromedriver-实例&quot;&gt;&lt;a href=&quot;#创建-chromedriver-实例&quot; class=&quot;headerlink&quot; title=&quot;创建 chromedriver 实例&quot;&gt;&lt;/a&gt;创建 chromedriver 实例&lt;/h4&gt;&lt;pre
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+      <category term="Selenium" scheme="http://yoursite.com/tags/Selenium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>模拟 Firefox 知乎登录</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/selenium_firefox%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/selenium_firefox%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95/</id>
+    <published>2020-08-09T10:52:00.000Z</published>
+    <updated>2020-08-09T11:45:23.764Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;代码示例：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&quot; language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;#
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+      <category term="Selenium" scheme="http://yoursite.com/tags/Selenium/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Selenium 模拟微博登录</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/Selenium+Chrome%E5%BE%AE%E5%8D%9A%E7%99%BB%E5%BD%95/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/Selenium+Chrome%E5%BE%AE%E5%8D%9A%E7%99%BB%E5%BD%95/</id>
+    <published>2020-08-09T10:47:00.000Z</published>
+    <updated>2020-08-09T11:39:09.564Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;启用-ChromeDriver&quot;&gt;&lt;a href=&quot;#启用-ChromeDriver&quot; class=&quot;headerlink&quot; title=&quot;启用 ChromeDriver&quot;&gt;&lt;/a&gt;启用 ChromeDriver&lt;/h3&gt;&lt;pre class=&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Selenium 简介</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/selenium%20%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95%E7%AE%80%E4%BB%8B/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/selenium%20%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95%E7%AE%80%E4%BB%8B/</id>
+    <published>2020-08-09T10:47:00.000Z</published>
+    <updated>2020-08-09T11:08:09.417Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h5 id=&quot;简单实例：&quot;&gt;&lt;a href=&quot;#简单实例：&quot; class=&quot;headerlink&quot; title=&quot;简单实例：&quot;&gt;&lt;/a&gt;简单实例：&lt;/h5&gt;&lt;pre class=&quot; language-python&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Selenium 基本使用</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/selenium%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/selenium%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-08-09T10:47:00.000Z</published>
+    <updated>2020-08-09T11:46:18.379Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Selenium简介&quot;&gt;&lt;a href=&quot;#Selenium简介&quot; class=&quot;headerlink&quot; title=&quot;Selenium简介&quot;&gt;&lt;/a&gt;Selenium简介&lt;/h3&gt;&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Selenium" scheme="http://yoursite.com/categories/Selenium/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy 集成 Selenium</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/selenium%E9%9B%86%E6%88%90%E5%88%B0scrapy/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/selenium%E9%9B%86%E6%88%90%E5%88%B0scrapy/</id>
+    <published>2020-08-09T10:47:00.000Z</published>
+    <updated>2020-08-09T11:47:10.156Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;设置中间件&quot;&gt;&lt;a href=&quot;#设置中间件&quot; class=&quot;headerlink&quot; title=&quot;设置中间件&quot;&gt;&lt;/a&gt;设置中间件&lt;/h3&gt;&lt;h5 id=&quot;集成-selenium-driver，实现动态加载&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Selenium" scheme="http://yoursite.com/categories/Selenium/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>session 与 cookie 的区别</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/session%E4%B8%8Ecookie%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/session%E4%B8%8Ecookie%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2020-08-09T10:47:00.000Z</published>
+    <updated>2020-08-09T11:49:27.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;Cookie&quot;&gt;&lt;a href=&quot;#Cookie&quot; class=&quot;headerlink&quot; title=&quot;Cookie&quot;&gt;&lt;/a&gt;Cookie&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;浏览器本地存储方式，存储键值对的格式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>存储知乎数据</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/%E5%AD%98%E5%82%A8%E7%9F%A5%E4%B9%8E%E6%95%B0%E6%8D%AE/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/%E5%AD%98%E5%82%A8%E7%9F%A5%E4%B9%8E%E6%95%B0%E6%8D%AE/</id>
+    <published>2020-08-09T10:47:00.000Z</published>
+    <updated>2020-08-09T11:17:50.054Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;h4 id=&quot;Scrapy-gt-Shell-中配置-User-Agent&quot;&gt;&lt;a href=&quot;#Scrapy-gt-Shell-中配置-User-Agent&quot; class=&quot;headerlink&quot; title=&quot;Scrapy -&amp;gt; Shell 中配置
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy 暂停与重启</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/Scrapy%E6%9A%82%E5%81%9C%E4%B8%8E%E9%87%8D%E5%90%AF%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/Scrapy%E6%9A%82%E5%81%9C%E4%B8%8E%E9%87%8D%E5%90%AF%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-08-09T10:39:00.000Z</published>
+    <updated>2020-08-09T11:37:24.107Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;实现方法如下&quot;&gt;&lt;a href=&quot;#实现方法如下&quot; class=&quot;headerlink&quot; title=&quot;实现方法如下&quot;&gt;&lt;/a&gt;实现方法如下&lt;/h3&gt;&lt;h5 id=&quot;方法一：进入-Terminal-输入以下命令&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Scrapy" scheme="http://yoursite.com/categories/Scrapy/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PhantomJS 简介</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/PhantomJS%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/PhantomJS%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-08-09T10:37:00.000Z</published>
+    <updated>2020-08-09T11:34:06.758Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;简述&quot;&gt;&lt;a href=&quot;#简述&quot; class=&quot;headerlink&quot; title=&quot;简述&quot;&gt;&lt;/a&gt;简述&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;PhantomJS 是一个基于 webkit 的 JavaScript API。它使用 QtWebKit
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Requests 模拟知乎登录</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/Requests%E6%A8%A1%E6%8B%9F%E7%9F%A5%E4%B9%8E%E7%99%BB%E5%BD%95/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/Requests%E6%A8%A1%E6%8B%9F%E7%9F%A5%E4%B9%8E%E7%99%BB%E5%BD%95/</id>
+    <published>2020-08-09T10:37:00.000Z</published>
+    <updated>2020-08-09T11:34:59.948Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h5 id=&quot;常见-http-status-code&quot;&gt;&lt;a href=&quot;#常见-http-status-code&quot; class=&quot;headerlink&quot; title=&quot;常见 http_status_code&quot;&gt;&lt;/a&gt;常见
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ChromeDriver 图片加载控制</title>
+    <link href="http://yoursite.com/2020/08/09/Python/crawler/senior/chromedriver-%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E6%8E%A7%E5%88%B6/"/>
+    <id>http://yoursite.com/2020/08/09/Python/crawler/senior/chromedriver-%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E6%8E%A7%E5%88%B6/</id>
+    <published>2020-08-09T10:37:00.000Z</published>
+    <updated>2020-08-09T10:46:19.457Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;设置-chromedriver-不加载图片&quot;&gt;&lt;a href=&quot;#设置-chromedriver-不加载图片&quot; class=&quot;headerlink&quot; title=&quot;设置 chromedriver 不加载图片&quot;&gt;&lt;/a&gt;设置 chromedriver
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Selenium" scheme="http://yoursite.com/categories/Selenium/"/>
+    
+    
+      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
     <title>个人简历</title>
     <link href="http://yoursite.com/2020/08/08/Python/basic/my%20data/"/>
     <id>http://yoursite.com/2020/08/08/Python/basic/my%20data/</id>
     <published>2020-08-08T07:19:14.000Z</published>
-    <updated>2020-08-08T05:17:57.224Z</updated>
+    <updated>2020-08-08T05:40:12.471Z</updated>
     
     <summary type="html">
     
@@ -175,289 +549,6 @@
     
     
       <category term="Port" scheme="http://yoursite.com/tags/Port/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网络基础</title>
-    <link href="http://yoursite.com/2020/07/12/Python/network/UDP/network-basic/"/>
-    <id>http://yoursite.com/2020/07/12/Python/network/UDP/network-basic/</id>
-    <published>2020-07-12T07:02:43.000Z</published>
-    <updated>2020-07-12T10:31:48.934Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;什么是网络&quot;&gt;&lt;a href=&quot;#什么是网络&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Network" scheme="http://yoursite.com/categories/Network/"/>
-    
-    
-      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux命令</title>
-    <link href="http://yoursite.com/2020/07/12/Python/network/UDP/linux-cmd/"/>
-    <id>http://yoursite.com/2020/07/12/Python/network/UDP/linux-cmd/</id>
-    <published>2020-07-12T06:59:55.000Z</published>
-    <updated>2020-07-12T08:32:06.073Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;查看操作系统的网卡信息&quot;&gt;&lt;a href=&quot;#查看操作系统的网卡信息&quot; class=&quot;headerlink&quot; title=&quot;查看操作系统的网卡信息&quot;&gt;&lt;/a&gt;&lt;strong&gt;查看操作系统的网卡信息&lt;/strong&gt;&lt;/h4&gt;&lt;h5
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
-    
-    
-      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IP地址</title>
-    <link href="http://yoursite.com/2020/07/12/Python/network/UDP/ip-addr/"/>
-    <id>http://yoursite.com/2020/07/12/Python/network/UDP/ip-addr/</id>
-    <published>2020-07-12T06:55:50.000Z</published>
-    <updated>2020-07-12T08:31:55.964Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;IP地址&quot;&gt;&lt;a href=&quot;#IP地址&quot; class=&quot;headerlink&quot; title=&quot;IP地址&quot;&gt;&lt;/a&gt;&lt;strong&gt;IP地址&lt;/strong&gt;&lt;/h3&gt;&lt;h5 id=&quot;什么是IP地址&quot;&gt;&lt;a href=&quot;#什么是IP地址&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Network" scheme="http://yoursite.com/categories/Network/"/>
-    
-    
-      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>接口自动化介绍</title>
-    <link href="http://yoursite.com/2020/07/07/Python/interface/interface_automation/"/>
-    <id>http://yoursite.com/2020/07/07/Python/interface/interface_automation/</id>
-    <published>2020-07-07T15:52:24.000Z</published>
-    <updated>2020-07-12T08:31:44.639Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;导语&quot;&gt;&lt;a href=&quot;#导语&quot; class=&quot;headerlink&quot; title=&quot;导语&quot;&gt;&lt;/a&gt;导语&lt;/h4&gt;&lt;p&gt;&lt;code&gt;合格的自动化测试工程师 -&amp;gt; 接口自动化测试框架&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;入门条件 -&amp;gt; 
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
-    
-    
-      <category term="Automation InterFace Test" scheme="http://yoursite.com/tags/Automation-InterFace-Test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>接口自动化测试</title>
-    <link href="http://yoursite.com/2020/07/07/Python/interface/interface_test_basic/"/>
-    <id>http://yoursite.com/2020/07/07/Python/interface/interface_test_basic/</id>
-    <published>2020-07-07T15:52:24.000Z</published>
-    <updated>2020-07-12T08:31:22.010Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;为什么要做接口测试？&quot;&gt;&lt;a href=&quot;#为什么要做接口测试？&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
-    
-    
-      <category term="InterFace Test" scheme="http://yoursite.com/tags/InterFace-Test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git基础</title>
-    <link href="http://yoursite.com/2020/06/30/Git/basic/"/>
-    <id>http://yoursite.com/2020/06/30/Git/basic/</id>
-    <published>2020-06-30T08:57:24.000Z</published>
-    <updated>2020-07-12T08:29:18.037Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;一．Git基础&quot;&gt;&lt;a href=&quot;#一．Git基础&quot; class=&quot;headerlink&quot; title=&quot;一．Git基础&quot;&gt;&lt;/a&gt;一．&lt;strong&gt;Git基础&lt;/strong&gt;&lt;/h3&gt;&lt;h4 id=&quot;1．Git介绍&quot;&gt;&lt;a href=&quot;#1．Git介绍&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
-    
-    
-      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
-    
-      <category term="Learn" scheme="http://yoursite.com/tags/Learn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>settings组件分析</title>
-    <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/Settings/"/>
-    <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/Settings/</id>
-    <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T10:30:03.322Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;h4 id=&quot;COOKIES-ENABLED&quot;&gt;&lt;a href=&quot;#COOKIES-ENABLED&quot; class=&quot;headerlink&quot; title=&quot;COOKIES_ENABLED&quot;&gt;&lt;/a&gt;COOKIES_ENABLED&lt;/h4&gt;&lt;p&gt; 进入
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
-    
-    
-      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
-    
-      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL基础</title>
-    <link href="http://yoursite.com/2020/06/28/MySQL/basic/"/>
-    <id>http://yoursite.com/2020/06/28/MySQL/basic/</id>
-    <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T08:29:54.798Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;查看库，表，内容&quot;&gt;&lt;a href=&quot;#查看库，表，内容&quot; class=&quot;headerlink&quot; title=&quot;查看库，表，内容&quot;&gt;&lt;/a&gt;查看库，表，内容&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;查看MySQL版本号 &lt;/p&gt;
-&lt;pre class=&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
-    
-    
-      <category term="Basics" scheme="http://yoursite.com/tags/Basics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>crawlspider源码分析</title>
-    <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/CrawlSpider-code/"/>
-    <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/CrawlSpider-code/</id>
-    <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T10:30:41.094Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;查看可用-scrapy-模板&quot;&gt;&lt;a href=&quot;#查看可用-scrapy-模板&quot; class=&quot;headerlink&quot; title=&quot;查看可用 scrapy 模板&quot;&gt;&lt;/a&gt;查看可用 scrapy 模板&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;h4
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
-    
-    
-      <category term="Scrapy" scheme="http://yoursite.com/tags/Scrapy/"/>
-    
-      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>拉钩网MySQL表结构设计</title>
-    <link href="http://yoursite.com/2020/06/28/Python/crawler/lagou/devise-mysql-table/"/>
-    <id>http://yoursite.com/2020/06/28/Python/crawler/lagou/devise-mysql-table/</id>
-    <published>2020-06-28T07:57:24.000Z</published>
-    <updated>2020-07-12T10:29:33.787Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;MySQL-表结构设计&quot;&gt;&lt;a href=&quot;#MySQL-表结构设计&quot; class=&quot;headerlink&quot; title=&quot;MySQL 表结构设计&quot;&gt;&lt;/a&gt;MySQL
-        
-      
-    
-    </summary>
-    
-    
-      <category term="MySQL" scheme="http://yoursite.com/categories/MySQL/"/>
-    
-    
-      <category term="Lagou" scheme="http://yoursite.com/tags/Lagou/"/>
-    
-      <category term="Practice" scheme="http://yoursite.com/tags/Practice/"/>
     
   </entry>
   
